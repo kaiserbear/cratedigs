@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.kaiserbear.co.uk/cratedigs-assets/schedule/schedule.css">
+    <!-- <link rel="stylesheet" href="schedule.css"> -->
+
+    <title>Crate Digs Schedule</title>
+</head>
+
+<body>
+
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+
+    <div class="heading-huge">
+        <script type="text/javascript">
+            var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+            function GetClock() {
+                var d = new Date();
+                var nday = d.getDay(),
+                    nmonth = d.getMonth(),
+                    ndate = d.getDate();
+                var nhour = d.getHours(),
+                    nmin = d.getMinutes();
+                if (nmin <= 9) nmin = "0" + nmin
+
+                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + " : " + nhour + ":" + nmin + "";
+            }
+
+            window.onload = function() {
+                GetClock();
+                setInterval(GetClock, 1000);
+            }
+        </script>
+        <div id="clockbox">></div>
+        <p style="text-align: center;">Times shown below are in UK GMT/BST <img src="https://www.kaiserbear.co.uk/cratedigs-assets/uk.svg" width="30px" alt="UK GMT/BST" /></p>
+    </div>
+
+    <div class="schedule">
+
+        <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule">
+            <div class="cd-schedule__timeline">
+                <ul>
+                    <!-- <li><span>12:00</span></li>
+                    <li><span>12:30</span></li>
+                    <li><span>13:00</span></li>
+                    <li><span>13:30</span></li> -->
+                    <li><span>14:00</span></li>
+                    <li><span>14:30</span></li>
+                    <li><span>15:00</span></li>
+                    <li><span>15:30</span></li>
+                    <li><span>16:00</span></li>
+                    <li><span>16:30</span></li>
+                    <li><span>17:00</span></li>
+                    <li><span>17:30</span></li>
+                    <li><span>18:00</span></li>
+                    <li><span>18:30</span></li>
+                    <li><span>19:00</span></li>
+                    <li><span>19:30</span></li>
+                    <li><span>20:00</span></li>
+                    <li><span>20:30</span></li>
+                    <li><span>21:00</span></li>
+                    <li><span>21:30</span></li>
+                    <li><span>22:00</span></li>
+                    <li><span>22:30</span></li>
+                    <li><span>23:00</span></li>
+                    <li><span>23:30</span></li>
+                    <li><span>24:00</span></li>
+                </ul>
+            </div>
+            <!-- .cd-schedule__timeline -->
+
+            <div class="cd-schedule__events">
+                <ul>
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Monday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="18:00" data-end="20:00" data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Localist</em>
+                                </a>
+                            </li>
+                            <li class="cd-schedule__event">
+                                <a data-start="20:00" data-end="22:00" data-event="event-3" href="#0">
+                                    <em class="cd-schedule__name">Dougie</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Tuesday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="20:00" data-end="22:00" data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">EF EM</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Wednesday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="18:00" data-end="20:00" data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Bostock</em>
+                                </a>
+                            </li>
+                            <li class="cd-schedule__event">
+                                <a data-start="20:00" data-end="22:00" data-event="event-3" href="#0">
+                                    <em class="cd-schedule__name">Emma Champion</em>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Thursday</span></div>
+
+                        <ul>
+
+
+                            <li class="cd-schedule__event">
+                                <a data-start="20:00" data-end="22:00" data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Chaz Harrison</em>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Friday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="18:00" data-end="20:00" data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Mister Huckstep</em>
+                                </a>
+                            </li>
+                            <li class="cd-schedule__event">
+                                <a data-start="20:00" data-end="22:00" data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">DJ Fiddlestix</em>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Saturday</span></div>
+
+                        <ul>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="cd-schedule__group">
+                        <div class="cd-schedule__top-info"><span>Sunday</span></div>
+
+                        <ul>
+                            <li class="cd-schedule__event">
+                                <a data-start="14:00" data-end="17:00" data-event="event-2" href="#0">
+                                    <em class="cd-schedule__name">Mister Trim</em>
+                                </a>
+                            </li>
+
+                            <li class="cd-schedule__event">
+                                <a data-start="17:00" data-end="19:00" data-event="event-1" href="#0">
+                                    <em class="cd-schedule__name">Jay Sebastian</em>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="cd-schedule-modal">
+                <header class="cd-schedule-modal__header">
+                    <div class="cd-schedule-modal__content">
+                        <span class="cd-schedule-modal__date"></span>
+                        <h3 class="cd-schedule-modal__name"></h3>
+                    </div>
+
+                    <div class="cd-schedule-modal__header-bg"></div>
+                </header>
+
+                <div class="cd-schedule-modal__body">
+                    <div class="cd-schedule-modal__event-info"></div>
+                    <div class="cd-schedule-modal__body-bg"></div>
+                </div>
+
+                <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+            </div>
+
+            <div class="cd-schedule__cover-layer"></div>
+        </div>
+        <!-- .cd-schedule -->
+
+    </div>
+    <script language="javascript" type="text/javascript" src="https://www.kaiserbear.co.uk/cratedigs-assets/schedule/util.js"></script>
+    <script language="javascript" type="text/javascript" src="https://www.kaiserbear.co.uk/cratedigs-assets/schedule/main.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="main.js"></script>  -->
+</body>
+
+</html>

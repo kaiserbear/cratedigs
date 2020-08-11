@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+.site-head-logo {
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+.cd-button {
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 0 0 2px #000000;
+    display: inline-block;
+    height: 4rem;
+    padding: 0 2rem;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-family: Muli, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.artist-track-info {
+    position: fixed;
+    bottom: 54px;
+    background: #2593F9;
+    text-align: left;
+    right: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 0 0 0 32px;
+}
+
+.artist-track-info span {
+    top: 14px;
+    position: relative;
+}
+
+.site-head-logo::before {
+    background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.svg);
+    width: 32px;
+    height: 32px;
+    content: "";
+    position: absolute;
+    left: -35px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#now-playing {
+    position: relative;
+    margin: 2rem 0 4rem;
+    font-size: 2rem;
+    position: relative;
+    margin: 2rem 0 4rem;
+    font-size: 1.5rem;
+    font-family: "Source Sans Pro";
+}
+
+#now-playing span {
+    font-weight: bold;
+}
+
+.page-schedule article.post-content {
+    max-width: inherit!important;
+    margin: 0 auto;
+    padding: 1vw 0;
+    width: 100%;
+}
+
+.page-schedule article.post-content li {
+    margin: 0;
+    padding-left: 0;
+    line-height: 0;
+}
+
+footer {
+    background: #333333;
+    min-height: 200px;
+    font-size: 1rem;
+    padding: 3rem;
+    opacity: 0;
+}
+
+.site-foot,
+.page-head,
+.site-head-right {
+    display: none;
+}
+
+.home-template h4 {
+    padding: 0 3rem;
+    font-size: 3rem;
+    margin: 0 0 4rem 0;
+}
+
+.home-template .page-head {
+    display: block;
+    background: url(https://www.kaiserbear.co.uk/cratedigs-assets/schedule/andrew-ling-VxiTYe3dtsc-unsplash.jpg);
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    max-width: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-template .page-head h2 {
+    color: white;
+}
+
+.jay-footer p {
+    position: relative;
+    display: inline;
+}
+
+.jay-footer p:last-child {
+    float: right
+}
+
+hr {
+    border-top: 1px solid #a5a5a5;
+}
+
+.kg-embed-card {
+    margin: 2vw 0;
+}
+
+.post-content-image {
+    width: 100%;
+}
+
+.post-card {
+    -ms-flex: 1 1 50%;
+    flex: auto;
+    position: relative;
+    height: 196px;
+    background: linear-gradient(135deg, #1f1f1f, #111) 50%;
+    background-size: cover;
+    overflow: hidden;
+    counter-increment: a;
+    margin: 2%;
+    max-width: 45%;
+    min-width: 25%;
+}
+
+.kg-bookmark-card {
+    width: 100%;
+    border: 1px solid #e5eff5;
+    background: #fff;
+}
+
+.kg-bookmark-container {
+    display: -webkit-box;
+    display: flex;
+    color: #343f44;
+    text-decoration: none;
+    box-shadow: none;
+    min-height: 120px;
+}
+
+.kg-bookmark-content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.kg-bookmark-thumbnail {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    min-width: 33%;
+}
+
+.kg-bookmark-title {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.kg-bookmark-description {
+    display: -webkit-box;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-top: 10px;
+    color: #54666d;
+    font-weight: 400;
+    max-height: 44px;
+    overflow-y: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.kg-bookmark-metadata {
+    color: #343f44;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.kg-bookmark-thumbnail img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kg-bookmark-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.kg-card {
+    margin: 0vw 0;
+}
+
+.kg-card iframe {
+    width: 100%;
+}
+
+.kg-width-wide {
+    transform: none;
+    width: inherit;
+}
+
+.post-content-excerpt {
+    display: none;
+}
+
+footer {
+    background: #333333;
+}
+
+footer a {
+    color: white;
+    font-size: 2rem;
+}
+
+.post-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1vw 0;
+}
+
+.post-card-title {
+    color: white;
+}
+
+.post-content-title {
+    margin: 0;
+    color: #131313;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.post-content .post-content-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: start;
+}
+
+.site-wrapper {
+    padding: 6vw 0 3vw 0;
+    min-height: 100vh;
+}
+
+.site-head-center {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+
+.site-head-container {
+    padding: 3rem;
+}
+
+.site-head {
+    position: absolute;
+    z-index: 300;
+    margin-top: -10px;
+    font-size: 1.35rem;
+    background: white;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.social {
+    position: absolute;
+    right: 30px;
+    z-index: 400;
+    top: 26px;
+}
+
+.social a {
+    margin-left: 4rem;
+}
+
+.social a img {
+    height: 30px;
+}
+
+.site-head-container,
+.site-head-left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: inherit;
+}
+
+.site-head-left {
+    top: 5px;
+}
+
+@media (max-width: 850px) {
+    body .nav-burger {
+        display: block;
+        left: 30px;
+        top: 27px;
+    }
+    body .volume-slider {
+        display: none;
+    }
+    body .social {
+        display: none;
+    }
+    body.home-template .page-head {
+        display: none;
+    }
+    body .site-wrapper {
+        padding: 18vw 3vw 3vw 3vw;
+        min-height: 100vh;
+    }
+    body #radio-player {
+        width: 100%;
+        -webkit-transform-origin-x: left;
+        background: white;
+        z-index: 200;
+        padding: 15px 127px;
+        border-top: transparent;
+        height: 70px;
+        overflow: visible;
+    }
+    body #radio-player audio {
+        width: calc(100% - 3rem);
+        outline: none;
+        border: transparent;
+        left: 2rem;
+        position: absolute;
+    }
+    body .controls .live {
+        position: absolute;
+        top: -41px;
+        z-index: 2000;
+        right: 14px;
+        display: none;
+    }
+    body .site-head-center {
+        position: absolute;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+        left: 0;
+        top: 20px;
+    }
+    body .post-card {
+        height: 140px;
+        width: 100%;
+        max-width: inherit;
+    }
+    body .site-head-open .site-foot {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        bottom: 0;
+        transition: transform .3s cubic-bezier(.4, .01, .165, .99);
+        transform: translateY(-4vw);
+    }
+    body.site-head-open .nav {
+        margin: 0;
+        background: white;
+        height: 100vh;
+        padding: 0 2rem;
+        top: 92px;
+        position: absolute;
+        width: 100%;
+    }
+    body .site-foot {
+        display: none!important;
+    }
+    body .site-head {
+        height: 80px;
+    }
+    body .site-head-logo img {
+        display: block;
+        margin-top: 8px;
+        width: auto;
+        height: 20px;
+        display: none;
+    }
+    body.site-head-open .site-head-container {
+        height: 100vh;
+        transition: height .2s ease-in;
+        width: 100%;
+        padding: 0;
+    }
+    body .site-head-logo {
+        margin-right: -35px;
+    }
+}
+
+
+/* IOS Only */
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    body #radio-player {
+        background: #333!important;
+    }
+    body .artist-track-info {
+        bottom: 70px;
+    }
+}
