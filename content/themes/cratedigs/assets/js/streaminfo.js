@@ -28,8 +28,10 @@ function IsLive() {
 
 function activeDay() {
     if ($(".calendar").length > 0) {
-        $('html, body').animate({
-            scrollTop: $('.active-day').offset().top
-        }, 'slow');
+        setTimeout(function() {
+            $('html, body').animate({
+                scrollTop: $('.active-day').offset().top
+            }, 'slow');
+        }, 500);
     }
 }
