@@ -162,7 +162,7 @@ body {
     .col {
         width: 100%;
         flex-basis: inherit;
-        display: none;
+        /* display: none; */
     }
     .col.active-day {
         display: block;
