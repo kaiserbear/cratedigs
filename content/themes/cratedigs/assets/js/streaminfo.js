@@ -19,9 +19,9 @@ function GetClock() {
 }
 
 function IsLive() {
-    if ($(".cc_streaminfo:contains('LIVE')").length > 0) {
+    if ($(".cc_streaminfo:contains('LIVE')").length > 0 || $(".cc_streaminfo:contains('Live')").length > 0) {
         $('.audio-player').addClass('live');
-    } else if ($(".cc_streaminfo:contains('LIVE')").length == 0) {
+    } else if ($(".cc_streaminfo:contains('LIVE')").length == 0) || $(".cc_streaminfo:contains('Live')").length == 0 {
         $('.audio-player').removeClass('live');
     }
 }
