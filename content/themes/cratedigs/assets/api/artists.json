@@ -1,0 +1,21 @@
+{
+    "jay_sebastian": {
+        "name": "Jay Sebastian",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/jay_sebastian.png",
+            "instagram_story": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram_story/jay_sebastian_story.png",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jay_sebastian.png:"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/jay.agram/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/jay_sebastian/",
+            "mixcloud": "https://www.mixcloud.com/jaysebastian/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "7pm - Late"
+        },
+        "showname": "Solar Trip"
+    }
+}
