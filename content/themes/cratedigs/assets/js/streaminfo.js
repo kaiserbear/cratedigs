@@ -26,6 +26,30 @@ function IsLive() {
     }
 }
 
+const
+
+function getStationInfo() {
+    var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function(data) {
+            console.log(data);
+        })
+        .done(function() {
+            // alert("second success");
+        })
+        .fail(function() {
+            // alert("error");
+        })
+        .always(function() {
+            // alert("finished");
+        });
+
+    // Perform other work here ...
+
+    // Set another completion function for the request above
+    jqxhr.always(function() {
+        // alert("second finished");
+    });
+}
+
 function getDJinfo() {
     var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {
             console.log(data);
