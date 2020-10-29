@@ -26,7 +26,7 @@ function IsLive() {
     }
 }
 
-const
+// const
 
 function getStationInfo() {
     var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function(data) {
