@@ -28,24 +28,24 @@ function IsLive() {
 
 function getDJinfo() {
     var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {
-            alert("success");
             console.log(data);
+            console.log(data.jay_sebastian);
         })
         .done(function() {
-            alert("second success");
+            // alert("second success");
         })
         .fail(function() {
-            alert("error");
+            // alert("error");
         })
         .always(function() {
-            alert("finished");
+            // alert("finished");
         });
 
     // Perform other work here ...
 
     // Set another completion function for the request above
     jqxhr.always(function() {
-        alert("second finished");
+        // alert("second finished");
     });
 }
 
