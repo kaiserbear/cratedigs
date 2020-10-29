@@ -26,6 +26,29 @@ function IsLive() {
     }
 }
 
+function getDJinfo() {
+    var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {
+            alert("success");
+            console.log(data);
+        })
+        .done(function() {
+            alert("second success");
+        })
+        .fail(function() {
+            alert("error");
+        })
+        .always(function() {
+            alert("finished");
+        });
+
+    // Perform other work here ...
+
+    // Set another completion function for the request above
+    jqxhr.always(function() {
+        alert("second finished");
+    });
+}
+
 function activeDay() {
     if ($(".calendar").length > 0) {
         setTimeout(function() {
