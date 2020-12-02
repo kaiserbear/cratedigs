@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 body {
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro"!important;
 }
 
 .center {
@@ -522,13 +522,7 @@ html.is-animating .transition-fade {
         left: 2rem;
         position: absolute;
     }
-    body .controls .live {
-        position: absolute;
-        top: -41px;
-        z-index: 2000;
-        right: 14px;
-        display: none;
-    }
+    body .controls .live {}
     body .site-head-center {
         position: absolute;
         display: -ms-flexbox;

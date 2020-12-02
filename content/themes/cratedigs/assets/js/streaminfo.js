@@ -18,59 +18,65 @@ function GetClock() {
     }
 }
 
-function IsLive() {
-    if ($(".cc_streaminfo:contains('LIVE')").length > 0) {
-        $('.audio-player').addClass('live');
-    } else if ($(".cc_streaminfo:contains('LIVE')").length == 0) {
-        $('.audio-player').removeClass('live');
-    }
-}
 
-// const
+function getStationInfo(callback) {
 
-function getStationInfo() {
-    var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function(data) {
-            console.log(data);
+    var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function() {
+
         })
-        .done(function() {
-            // alert("second success");
+        .done(function(data) {
+            var dataSet = data.icestats.source
+            if (dataSet.title == undefined) {
+                var stationNowPlaying = dataSet[0].title
+                var genre = dataSet[0].genre
+            } else {
+                var stationNowPlaying = dataSet.title
+                var genre = dataSet.genre
+            }
+            callback(stationNowPlaying, genre);
         })
         .fail(function() {
-            // alert("error");
-        })
-        .always(function() {
-            // alert("finished");
+            // alert("error"); // Should work on something here for when the server goes down. 
         });
-
-    // Perform other work here ...
-
-    // Set another completion function for the request above
-    jqxhr.always(function() {
-        // alert("second finished");
-    });
 }
 
 function getDJinfo() {
     var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {
-            console.log(data);
-            console.log(data.jay_sebastian);
+
+            // console.log(data.jay_sebastian);
         })
-        .done(function() {
-            // alert("second success");
+        .done(function(data) {
+
+            function myCallback(stationNowPlaying, genre) {
+
+                if (data[stationNowPlaying] !== undefined) {
+                    updateStationDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, 'Live now: ' + data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
+                }
+                else {
+                    updateStationDetails(stationNowPlaying, genre, null, null, null);
+                }
+            }
+            getStationInfo(myCallback);
+
+            function updateStationDetails(artistName, showname, showtime, image) {
+                $('.artistName').text(artistName);
+                $('.showname').text(showname);
+                $('.showtime').text(showtime);
+                if (image !== null) {
+                    $('.play-container').css({
+                        "background": "url(" + image + ")",
+                        "background-size": "contain",
+                        "background-repeat": "no-repeat"
+                    });
+                } else if (image == null) {
+                    $('.play-container').removeAttr("style");
+                }
+            }
+
         })
         .fail(function() {
-            // alert("error");
-        })
-        .always(function() {
-            // alert("finished");
+            // alert("error"); // Again something here if we can't get the artists details. 
         });
-
-    // Perform other work here ...
-
-    // Set another completion function for the request above
-    jqxhr.always(function() {
-        // alert("second finished");
-    });
 }
 
 function activeDay() {
