@@ -41,18 +41,14 @@ function getStationInfo(callback) {
 }
 
 function getDJinfo() {
-    var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {
-
-            // console.log(data.jay_sebastian);
-        })
+    var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {})
         .done(function(data) {
 
             function myCallback(stationNowPlaying, genre) {
 
                 if (data[stationNowPlaying] !== undefined) {
                     updateStationDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, 'Live now: ' + data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
-                }
-                else {
+                } else {
                     updateStationDetails(stationNowPlaying, genre, null, null, null);
                 }
             }

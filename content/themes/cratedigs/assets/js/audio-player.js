@@ -20,3 +20,17 @@ playBtn.addEventListener(
     },
     false
 );
+
+const hamburgerMenu = document.getElementById("menu--btn");
+const navigation = document.getElementById("nav-menu");
+
+function nav() {
+    hamburgerMenu.onclick = function(e) {
+        console.log('check');
+        hamburgerMenu.classList.toggle("open");
+        navigation.classList.toggle("open");
+
+    }
+}
+
+nav();

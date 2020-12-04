@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 body {
-    font-family: "Source Sans Pro"!important;
+    font-family: "Apercu"!important;
 }
 
 .center {
@@ -9,7 +8,7 @@ body {
 
 .post-full-content #clockbox,
 .country-info {
-    font-family: "Source Sans Pro";
+    font-family: "Apercu";
 }
 
 .cd-button {
@@ -446,15 +445,21 @@ footer a {
     position: relative;
 }
 
+button:focus,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 html.is-animating .transition-fade {
     opacity: 0;
 }
 
 .social {
     position: absolute;
-    right: 30px;
-    z-index: 400;
-    top: 15px;
+    right: 82px;
+    z-index: 1100;
+    top: 8%;
 }
 
 .social a {
@@ -462,7 +467,7 @@ html.is-animating .transition-fade {
 }
 
 .social a img {
-    height: 30px;
+    height: 50px;
 }
 
 

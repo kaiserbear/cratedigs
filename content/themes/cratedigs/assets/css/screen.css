@@ -110,6 +110,111 @@ body {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 63px;
+    background: black;
+    z-index: 1000;
+    height: 100vh;
+    width: calc(100% + 190px);
+    padding: 0 9rem;
+}
+
+.nav-menu.open {
+    display: block;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+}
+
+.menu--btn {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    left: 15px;
+}
+
+.menu--btn span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+.menu--btn span:nth-child(1) {
+    top: 0px;
+}
+
+.menu--btn span:nth-child(2),
+.menu--btn span:nth-child(3) {
+    top: 9px;
+}
+
+.menu--btn span:nth-child(4) {
+    top: 18px;
+}
+
+.menu--btn.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu--btn.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu--btn.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.menu--btn.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
 
 /* 4. Site Header
 /* ---------------------------------------------------------- */
@@ -292,9 +397,8 @@ body {
     position: relative;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     height: 64px;
     font-size: 1.3rem;
 }
@@ -355,7 +459,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     z-index: 100;
     flex-shrink: 0;
     display: inline-block;
-    margin-right: 32px;
     padding: 12px 0;
     color: #fff;
     font-size: 1.7rem;
@@ -387,26 +490,28 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav {
     position: absolute;
     z-index: 1000;
-    display: flex;
-    margin: 0 0 0 -12px;
+    margin: 3rem 0 0 -12px;
     padding: 0;
     list-style: none;
     transition: all 1.0s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .nav li {
     display: block;
-    margin: 0;
+    margin: 0 0 2.5rem;
     padding: 0;
 }
 
 .nav li a {
     position: relative;
-    display: block;
+    display: inline-block;
     padding: 12px 12px;
     color: #fff;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
+    font-size: 44px;
 }
 
 .nav li a:hover {
