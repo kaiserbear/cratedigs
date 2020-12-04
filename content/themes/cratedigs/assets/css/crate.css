@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Apercu';
-    src: url('../fonts/apercu.woff') format('woff');
+    src: url('../fonts/ApercuPro-Medium.woff') format('woff'), url('../fonts/ApercuPro-Medium.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
