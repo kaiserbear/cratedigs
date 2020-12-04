@@ -17,6 +17,12 @@ h1 {
     text-align: center;
 }
 
+@media (max-width: 400px) {
+    .details {
+        max-width: 163px;
+    }
+}
+
 .post-full-content #clockbox,
 .country-info {
     font-family: "Apercu";
@@ -188,42 +194,6 @@ h1 {
     }
 }
 
-
-/* footer {
-    background: #333333;
-    min-height: 200px;
-    font-size: 1rem;
-    padding: 3rem;
-    opacity: 0;
-} */
-
-
-/* .site-foot,
-.page-head,
-.site-head-right {
-    display: none;
-} */
-
-
-/* 
-.home-template h4 {
-    padding: 0 3rem;
-    font-size: 3rem;
-    margin: 0 0 4rem 0;
-} */
-
-
-/* .home-template .page-head {
-    display: block;
-    background: url(https://www.kaiserbear.co.uk/cratedigs-assets/schedule/andrew-ling-VxiTYe3dtsc-unsplash.jpg);
-    background-size: cover;
-    margin: 0;
-    width: 100%;
-    max-width: inherit;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
 .home-template .page-head h2 {
     color: white;
 }
@@ -236,104 +206,6 @@ h1 {
 .jay-footer p:last-child {
     float: right
 }
-
-
-/* hr {
-    border-top: 1px solid #a5a5a5;
-} */
-
-
-/* .kg-embed-card {
-    margin: 2vw 0;
-}
-
-.post-content-image {
-    width: 100%;
-} */
-
-
-/* .post-card {
-    -ms-flex: 1 1 50%;
-    flex: auto;
-    position: relative;
-    height: 196px;
-    background: linear-gradient(135deg, #1f1f1f, #111) 50%;
-    background-size: cover;
-    overflow: hidden;
-    counter-increment: a;
-    margin: 2%;
-    max-width: 45%;
-    min-width: 25%;
-} */
-
-
-/* 
-.kg-bookmark-card {
-    width: 100%;
-    border: 1px solid #e5eff5;
-    background: #fff;
-}
-
-.kg-bookmark-container {
-    display: -webkit-box;
-    display: flex;
-    color: #343f44;
-    text-decoration: none;
-    box-shadow: none;
-    min-height: 120px;
-}
-
-.kg-bookmark-content {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    flex-basis: 100%;
-    -webkit-box-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    padding: 20px;
-}
-
-.kg-bookmark-thumbnail {
-    position: relative;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    min-width: 33%;
-}
-
-.kg-bookmark-title {
-    font-size: 1.5rem;
-    line-height: 1.5em;
-    font-weight: 600;
-}
-
-.kg-bookmark-description {
-    display: -webkit-box;
-    font-size: 1.4rem;
-    line-height: 1.5em;
-    margin-top: 10px;
-    color: #54666d;
-    font-weight: 400;
-    max-height: 44px;
-    overflow-y: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-
-.kg-bookmark-metadata {
-    color: #343f44;
-    font-size: 1.4rem;
-    font-weight: 500;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: 14px;
-} */
 
 .kg-bookmark-thumbnail img {
     width: 100%;
@@ -377,78 +249,6 @@ h1 {
     max-width: inherit;
 }
 
-
-/* footer {
-    background: #333333;
-}
-
-footer a {
-    color: white;
-    font-size: 2rem;
-} */
-
-
-/* .post-content {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 1vw 0;
-} */
-
-
-/* .post-card-title {
-    color: white;
-} */
-
-
-/* .post-content-title {
-    margin: 0;
-    color: #131313;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-} */
-
-
-/* 
-.post-content .post-content-header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: start;
-    align-items: start;
-} */
-
-
-/* 
-
-.site-head-center {
-    position: absolute;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    left: 0;
-}
-
-.site-head-container {
-    padding: 3rem;
-}
-
-.site-head {
-    position: absolute;
-    z-index: 300;
-    margin-top: -10px;
-    font-size: 1.35rem;
-    background: white;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-*/
-
 .transition-fade {
     transition: 0.4s;
     opacity: 1;
@@ -467,33 +267,21 @@ html.is-animating .transition-fade {
 }
 
 .social {
-    position: absolute;
-    right: 82px;
+    position: relative;
     z-index: 1100;
-    top: 8%;
+    float: left;
+    margin-top: 44rem;
+    width: 100%;
 }
 
 .social a {
-    margin-left: 4rem;
+    display: block;
+    margin: 2rem 0 0 2rem;
 }
 
 .social a img {
     height: 50px;
 }
-
-
-/*
-.site-head-container,
-.site-head-left {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: inherit;
-}
-
-.site-head-left {
-    top: 5px;
-} */
 
 @media (max-width: 850px) {
     body .nav-burger {
@@ -502,9 +290,6 @@ html.is-animating .transition-fade {
         top: 27px;
     }
     body .volume-slider {
-        display: none;
-    }
-    body .social {
         display: none;
     }
     body.home-template .page-head {
