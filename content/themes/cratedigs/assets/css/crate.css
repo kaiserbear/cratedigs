@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('../fonts/apercu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: "Apercu"!important;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 .center {
