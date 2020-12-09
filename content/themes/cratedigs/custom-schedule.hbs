@@ -1,25 +1,81 @@
-{{!--
-This error template is used for all 404 errors, which might occur on your site.
-It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
---}}
-
 {{!< default}}
-{{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #author tags pulls data from the author --}}
 
 <header class="site-header">
     {{> site-header}}
 </header>
 
-<p>Template page</p>
+ <div id="swup" class="transition-fade">
 
-<main id="site-main" class="site-main outer error-content">
-        {{#get "posts" limit="3" include="authors,tags"}}
-            <div class="post-feed">
-                {{#foreach posts}}
-                {{> "post-card"}}
-                {{/foreach}}
+
+    {{!-- The main content area --}}
+    <main id="site-main" class="site-main outer">
+        <div class="inner posts">
+
+            <div id="clockbox"></div>
+            <div class="country-info">
+                <p>Times shown below are in UK GMT/BST <img src="https://www.cratedigs.com/assets/img/uk.svg" style="width: 30px!important" alt="UK GMT/BST" /></p>
             </div>
-        {{/get}}
-    </div>
-</main>
+
+            <div class="row calendar">
+                <div id="schedule-Monday" class="col">
+                    <h4>Monday</h4>
+                    <a href="/localist/">
+                        <h4>Localist</h4>
+                        <p>6pm</p>
+                    </a>
+                    <a href="/dougie/">
+                        <h4>Dougie</h4>
+                        <p>8pm</p>
+                    </a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jeff_higgns.png" alt="" /></a>
+                </div>
+                <div id="schedule-Tuesday" class="col">
+                    <h4>Tuesday</h4>
+                    <a href="/dj-programma/"><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dj_programma.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/blason.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/savio.png" alt="" /></a>
+                </div>
+                <div id="schedule-Wednesday" class="col">
+                    <h4>Wednesday</h4>
+                    <a href="/whothebuck/"><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/whothebuck.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/diamonds_in_the_rough.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/no_requests.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/marc-noble.png" class="free" alt="" /></a>
+                </div>
+                <div id="schedule-Thursday" class="col">
+                    <h4>Thursday</h4>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dave_lazy_express.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/yus.png" alt="" /></a>
+                    <a href="/shoon-jr/"><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/shoonjr.png" alt="" /></a>
+                </div>
+                <div id="schedule-Friday" class="col">
+                    <h4>Friday</h4>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/eyes_look_left.png" alt="" /></a>
+                    <a href="https://www.cratedigs.com/dj-fiddlestix/"><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/the_friday_groove.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/ruralhifi.png" alt="" /></a>
+                </div>
+                <div id="schedule-Saturday" class="col">
+                    <h4>Saturday</h4>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jay_wesley.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/aj-vidal.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/NikNak.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/london_house_music_works.png" alt="" />
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/danvandan.png" alt="" /></a>
+                    
+                </div>
+                <div id="schedule-Sunday" class="col">
+                    <h4>Sunday</h4>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/blind-poses.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/fren.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/laidback_and_lounging.png" alt="" /></a>
+                    <a href=""><img src="https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/speedyman_records.png" alt="" /></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</div>
