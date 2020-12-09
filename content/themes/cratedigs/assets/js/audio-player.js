@@ -27,8 +27,6 @@ const $navigationItem = $('#nav-menu li a');
 
 function nav() {
 
-    console.log($navigationItem);
-
     hamburgerMenu.onclick = function(e) {
         hamburgerMenu.classList.toggle("open");
         navigation.classList.toggle("open");

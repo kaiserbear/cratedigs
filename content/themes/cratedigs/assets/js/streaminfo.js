@@ -47,7 +47,7 @@ function getDJinfo() {
             function myCallback(stationNowPlaying, genre) {
 
                 if (data[stationNowPlaying] !== undefined) {
-                    updateStationDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, +data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
+                    updateStationDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
                 } else {
                     updateStationDetails(stationNowPlaying, genre, null, null, null);
                 }
