@@ -62,7 +62,7 @@ function printCalendar() {
                 }
 
                 if (entry.description) {
-                    calendarRows.push(`<div class="entry"><div class="time">${time}</div><div class="artist-name"><a href="${entry.description}">${entry.summary}</a></div></div>`);
+                    calendarRows.push(`<div class="entry"><div class="time">${time}</div><div class="artist-name"><a href="/${entry.description}">${entry.summary}</a></div></div>`);
                 } else {
                     calendarRows.push(`<div class="entry"><div class="time">${time}</div><div class="artist-name">${entry.summary}</div></div>`);
                 }
