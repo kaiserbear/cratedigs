@@ -2,6 +2,10 @@
     margin: 9rem 0;
 }
 
+#schedule h3 {
+    font-size: 25px;
+}
+
 #schedule .entry {
     margin: 2rem 0;
 }
@@ -19,6 +23,9 @@
 @media (max-width: 850px) {
     #schedule {
         margin: 0;
+    }
+    #schedule h3 {
+        font-size: 18px;
     }
     #schedule .time,
     #schedule .artist-name {
