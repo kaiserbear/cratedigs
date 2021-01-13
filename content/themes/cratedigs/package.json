@@ -46,13 +46,14 @@
     "bugs": "https://github.com/TryGhost/Casper/issues",
     "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
     "devDependencies": {
-        "@tryghost/release-utils": "0.6.3",
+        "@tryghost/release-utils": "^0.6.9",
         "autoprefixer": "9.8.5",
         "beeper": "2.0.0",
         "cssnano": "4.1.10",
-        "gscan": "3.5.4",
+        "gscan": "^3.6.1",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
+        "gulp-google-calendar-events": "^1.0.4",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-uglify": "3.0.2",
@@ -88,5 +89,9 @@
                 "width": 2000
             }
         }
+    },
+    "dependencies": {
+        "googleapis": "^67.0.0",
+        "googleapis-calendar": "^1.0.3"
     }
 }

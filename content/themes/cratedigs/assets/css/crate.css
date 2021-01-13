@@ -96,23 +96,6 @@ h1 {
     font-weight: bold;
 }
 
-.page-schedule .site-main {
-    max-width: inherit!important;
-    margin: 0 auto;
-    padding: 1vw 0;
-    width: 100%;
-}
-
-.page-schedule .post-full-content {
-    padding: 8rem 3rem;
-}
-
-.page-schedule article.post-content li {
-    margin: 0;
-    padding-left: 0;
-    line-height: 0;
-}
-
 .calendar h4 {
     width: 100%;
     text-align: center;
@@ -183,12 +166,6 @@ h1 {
     .col.active-day {
         display: block;
     }
-    .page-schedule .site-main {
-        padding: 20vw 0;
-    }
-    .page-schedule .post-full-content {
-        padding: 2rem 3rem;
-    }
     .free {
         display: none!important;
     }
@@ -244,10 +221,11 @@ h1 {
     display: none;
 }
 
-.page-schedule .site-main .inner {
+
+/* .page-schedule .site-main .inner {
     width: 100%;
     max-width: inherit;
-}
+} */
 
 .transition-fade {
     transition: 0.4s;
@@ -376,6 +354,9 @@ html.is-animating .transition-fade {
     }
     body .site-head-logo {
         margin-right: -35px;
+    }
+    #schedule {
+        margin-top: inherit;
     }
 }
 
