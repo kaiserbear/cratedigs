@@ -32,7 +32,6 @@ function nav() {
         navigation.classList.toggle("open");
     }
     $navigationItem.on("click", function() {
-        console.log('check');
         navigation.classList.toggle("open");
         hamburgerMenu.classList.toggle("open");
     });

@@ -37,7 +37,8 @@ function printCalendar() {
             'timeZone': userTimeZone,
             'singleEvents': true,
             'timeMin': (new Date()).toISOString(), //gathers only events not happened yet
-            'maxResults': 20,
+            // 'timeMax': (new Date() + 7).toISOString(),
+            'maxResults': 30,
             'orderBy': 'startTime'
         });
     }).then(function(response) {
@@ -49,14 +50,12 @@ function printCalendar() {
 
                 var artistTime = entry.start.dateTime;
 
-                var dayOfWeek = moment(artistTime).format("dddd");
+                var dayOfWeek = moment(artistTime).format("dddd ll");
+                var dateOfWeek = moment(artistTime).format("ll");
+                console.log(dateOfWeek);
                 var time = moment(entry.start.dateTime).format("LT");
 
-                if (dayOfWeek === printDay) {
-                    console.log(printDay);
-                    console.log(true);
-                } else if (dayOfWeek !== printDay) {
-                    console.log(false);
+                if (dayOfWeek === printDay) {} else if (dayOfWeek !== printDay) {
                     printDay = dayOfWeek;
                     calendarRows.push(`<h3>${dayOfWeek}</h3>`);
                 }
@@ -67,8 +66,6 @@ function printCalendar() {
                     calendarRows.push(`<div class="entry"><div class="time">${time}</div><div class="artist-name">${entry.summary}</div></div>`);
                 }
 
-
-                // console.log(entry.description)
             });
             calendarRows.push('</div>');
             if ($('#schedule').length > 0) {
