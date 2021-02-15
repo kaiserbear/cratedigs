@@ -38,7 +38,7 @@ function printCalendar() {
             'singleEvents': true,
             'timeMin': (new Date()).toISOString(), //gathers only events not happened yet
             // 'timeMax': (new Date() + 7).toISOString(),
-            'maxResults': 30,
+            'maxResults': 50,
             'orderBy': 'startTime'
         });
     }).then(function(response) {
@@ -52,7 +52,6 @@ function printCalendar() {
 
                 var dayOfWeek = moment(artistTime).format("dddd ll");
                 var dateOfWeek = moment(artistTime).format("ll");
-                console.log(dateOfWeek);
                 var time = moment(entry.start.dateTime).format("LT");
 
                 if (dayOfWeek === printDay) {} else if (dayOfWeek !== printDay) {

@@ -40,24 +40,6 @@ function getStationInfo(callback) {
         });
 }
 
-function getScheduleInfo() {
-    var jqxhr = $.get("https://www.googleapis.com/calendar/v3/calendars/c_1ov7t9l2u0toe1m85ssn738e90@group.calendar.google.com/events?key=AIzaSyDFyrSc9ZJk2ySWL2I8CdEI48HLO7dJsgY", function() {
-
-        })
-        // .beforeSend(function() {
-        //     console.log('..loading schedule');
-        // })
-        .done(function(data) {
-            $.each(data.items, function(key, value) {
-                console.log(this.summary);
-                console.log(this.start.dateTime);
-            });
-            // console.log(data.items.start.datetime)
-        })
-        .fail(function() {
-            // alert("error"); // Should work on something here for when the server goes down. 
-        });
-}
 
 function getDJinfo() {
     var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {})
