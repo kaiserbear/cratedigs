@@ -21,7 +21,7 @@ function GetClock() {
 
 function getStationInfo(callback) {
 
-    var jqxhr = $.get("http://cratedigs.radioca.st/status-json.xsl", function() {
+    var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function() {
 
         })
         .done(function(data) {

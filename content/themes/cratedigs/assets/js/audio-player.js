@@ -1,6 +1,7 @@
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-    "http://cratedigs.radioca.st/stream"
+    // "http://cratedigs.radioca.st/stream"
+    "https://visual.shoutca.st/stream/cratedigstemp"
 );
 
 //toggle between playing and pausing on button click
