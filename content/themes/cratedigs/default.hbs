@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/schedule.css?0121" />
     <link rel="stylesheet" type="text/css" href="/assets/css/crate.css?0121" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156403087-1"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" />
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -97,9 +98,10 @@
     <script src="https://apis.google.com/js/api.js"></script>
 
     <script language="javascript" type="text/javascript" src="/assets/js/calendar.js?280221"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script language="javascript" type="text/javascript" src="/assets/js/SwupBodyClassPlugin.min.js"></script>
+    
     <script type="text/javascript">
         const swup = new Swup({
             plugins: [new SwupBodyClassPlugin()]
@@ -110,8 +112,11 @@
             printCalendar();
         }
         // this event runs for every page view after initial load
-        swup.on('contentReplaced', crateInit);
-        setInterval(getDJinfo, 500);
+         swup.on('contentReplaced', function() {
+            crateInit();
+            window.scrollTo(0, 0);
+        });
+        setInterval(getDJinfo, 2000);
     </script>
     
 </body>
