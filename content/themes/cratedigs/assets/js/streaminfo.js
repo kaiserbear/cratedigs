@@ -87,7 +87,9 @@ function activeDay() {
 }
 
 function shopify() {
+    console.log('check');
     if ($("#collection-component-1615475004886").is(':empty')) {
+
         (function() {
             var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
             if (window.ShopifyBuy) {
