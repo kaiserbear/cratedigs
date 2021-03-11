@@ -87,7 +87,6 @@ function activeDay() {
 }
 
 function shopify() {
-    console.log('check');
     if ($("#collection-component-1615475004886").is(':empty')) {
 
         (function() {
@@ -241,3 +240,4 @@ function shopify() {
     }
 
 }
+shopify();
