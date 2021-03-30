@@ -1,0 +1,1005 @@
+{
+
+  "dunners": {
+      "name": "Dunners",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dunners.jpg"
+      },
+      "social_media": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": "",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Saturday",
+          "time": "Live: 8am GMT"
+      },
+      "showname": "Brother Theresa"
+  },
+
+  "uhhhsamantha": {
+      "name": "uhhhsamantha",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/uhhhsamantha.jpg"
+      },
+      "social_media": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": "",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Thursday",
+          "time": "Live: 8pm PT"
+      },
+      "showname": ""
+  },
+
+"fattizzo": {
+    "name": "Dave Fattizzo",
+    "images": {
+        "instagram_normal": "",
+        "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dave_fattizzo.jpg"
+    },
+    "social_media": {
+        "instagram": "",
+        "facebook": "",
+        "soundcloud": "",
+        "mixcloud": ""
+    },
+    "timeslot": {
+        "day": "Wednesday",
+        "time": "Live: 9pm EST"
+    },
+    "showname": "Legendary Mix Series"
+},
+
+  "simons": {
+      "name": "Sirgio",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/sirgio.jpg"
+      },
+      "social_media": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": "",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Friday",
+          "time": "Live: 7pm AEDT "
+      },
+      "showname": ""
+  },
+
+
+  "moltisanti": {
+      "name": "Tom Moltisanti",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/tom_moltisanti.jpg"
+      },
+      "social_media": {
+          "instagram": "https://www.instagram.com/thomginty/",
+          "facebook": "",
+          "soundcloud": "",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Thursday",
+          "time": "Live: 2pm GMT "
+      },
+      "showname": ""
+  },
+
+
+  "aspin": {
+      "name": "DJ Aspin ",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/aspin.jpg"
+      },
+      "social_media": {
+          "instagram": "https://www.instagram.com/codyaspen/",
+          "facebook": "",
+          "soundcloud": "https://soundcloud.com/codyaspen",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Friday",
+          "time": "Live: 9pm EST "
+      },
+      "showname": ""
+  },
+
+  "rock": {
+      "name": "Jim McGuinn",
+      "images": {
+          "instagram_normal": "",
+          "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jim.jpg"
+      },
+      "social_media": {
+          "instagram": "",
+          "facebook": "",
+          "soundcloud": "",
+          "mixcloud": ""
+      },
+      "timeslot": {
+          "day": "Sunday",
+          "time": "Live: 7pm GMT"
+      },
+      "showname": "§ESSION§"
+  },
+
+    "nostradahm": {
+        "name": "nostradahm",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/nostradahm.jpg"
+        },
+        "social_media": {
+            "instagram": "",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 6pm PT"
+        },
+        "showname": ""
+    },
+
+    "tane": {
+        "name": "Oscillation Station",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/tane.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/oscillation.station/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 4pm GMT"
+        },
+        "showname": ""
+    },
+
+    "villanis": {
+        "name": "Villanis",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/villanis.jpg"
+        },
+        "social_media": {
+            "instagram": "",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "Live: 5pm CET"
+        },
+        "showname": "Villanis Awesome Mix"
+    },
+
+    "fitz": {
+        "name": "Fitz",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/fitz.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/damnitfitz/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 9pm EST"
+        },
+        "showname": "Fitz Spins Plastic"
+    },
+
+    "robbie": {
+        "name": "Araw",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/araw.jpg"
+        },
+        "social_media": {
+            "instagram": "",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 8pm PST"
+        },
+        "showname": ""
+    },
+
+    "arths": {
+        "name": "Arths",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/arths.jpg"
+        },
+        "social_media": {
+            "instagram": "",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": ""
+    },
+
+    "soulekted": {
+        "name": "Soulekted",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/soulekted.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/soulekted/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 8pm PST"
+        },
+        "showname": ""
+    },
+
+    "taijae": {
+        "name": "Taijae",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/taijae.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/taijaee/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 7pm EAT"
+        },
+        "showname": ""
+    },
+
+    "erezdavids": {
+        "name": "Erez Davids",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/erez-jpg.png",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/erez-jpg.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/erez.jpg/",
+            "soundcloud": "https://soundcloud.com/erezjpg"
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "9pm EST"
+        },
+        "showname": "Thursday Night HEAT"
+    },
+
+    "rainbird": {
+        "name": "Rainbird Williams",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/rainbird_williams.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/rainbirdwilliams/",
+            "soundcloud": "https://soundcloud.com/rainbirdwilliams/"
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "3pm AEDT"
+        },
+        "showname": ""
+    },
+
+    "fleetwood": {
+        "name": "Fleetwood Magneto",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/fleetwood_magento.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/fleetwoodmagneto/"
+        },
+        "timeslot": {
+            "day": "Monday",
+            "time": "Live: 7pm EST"
+        },
+        "showname": ""
+    },
+
+    "naru": {
+        "name": "DJ Naru",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dj_naru.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/djnaru_bttbcvc/",
+            "mixcloud": "https://www.mixcloud.com/narumi-asada/"
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 7pm AEDT"
+        },
+        "showname": ""
+    },
+
+    "rosyestra": {
+        "name": "Estra",
+        "images": {
+            "instagram_normal": "",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/estra.jpg"
+        },
+        "social_media": {
+            "instagram": ""
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 8pm PT"
+        },
+        "showname": ""
+    },
+
+    "bizmuth": {
+        "name": "DJ Bizmuth",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/bizmuth.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/djbizmuth/"
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 7pm EST"
+        },
+        "showname": ""
+    },
+
+    "obah": {
+        "name": "OBaH",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/obah.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/obahnyc/",
+            "soundcloud": "https://soundcloud.com/obahnyc/"
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "Live: 7pm EST"
+        },
+        "showname": "Gold Standard Radio"
+    },
+    "scottie_hale": {
+        "name": "Scottie Hale",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/scottie_hale.png",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/scottie_hale.png"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/scottiehale/",
+            "mixcloud": "https://www.mixcloud.com/scott-hale3/"
+        },
+        "timeslot": {
+            "day": "Monday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": ""
+    },
+    "michelle_kay": {
+        "name": "Michelle Kay",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/michelle_kay.png",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/michelle_kay.png"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/michelle__kay/",
+            "soundcloud": "https://soundcloud.com/michellekayyyy"
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "Live: 7pm EST"
+        },
+        "showname": ""
+    },
+    "4_colours": {
+        "name": "4Colours",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/4_colours.png",
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/4_colours.png"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/4colours_one_foot_in_the_chill/",
+            "mixcloud": "https://www.mixcloud.com/forr-colours/",
+            "soundcloud": "https://soundcloud.com/lee_scott"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 7pm GMT"
+        },
+        "showname": ""
+    },
+
+    "monoot": {
+        "name": "Monoot",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/monoot.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/mon00t/",
+            "soundcloud": "https://soundcloud.com/monoot"
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": "mon-inn with monoot"
+    },
+
+    "dante": {
+        "name": "Dante Scaglione",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dante_scaglione.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/d_a_n_t/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 9pm EST"
+        },
+        "showname": "Radio Infernal"
+    },
+
+    "simio_albino": {
+        "name": "Simio Albino",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/simio_albino.jpg"
+        },
+        "social_media": {
+            "soundcloud": "https://soundcloud.com/simio_albino/end-or-beginning"
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 7pm EST"
+        },
+        "showname": "Primal Therapies"
+    },
+
+    "sky_society": {
+        "name": "Sky Society",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/sky_society.jpg"
+        },
+        "social_media": {
+            "soundcloud": ""
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 5pm EST"
+        },
+        "showname": "Sundays With You"
+    },
+
+    "devin": {
+        "name": "dvndrth",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/devin_dearth.jpg"
+        },
+        "social_media": {
+            "mixcloud": "https://www.mixcloud.com/dvndrth/",
+            "instagram": "https://www.instagram.com/dvndrth/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 6pm EST"
+        },
+        "showname": ""
+    },
+    "flyfox": {
+        "name": "FlyFox",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/flyfox.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/flymissfox/",
+            "soundcloud": "https://soundcloud.com/justinefox/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 5pm GMT"
+        },
+        "showname": ""
+    },
+
+    "paul_hierophant": {
+        "name": "Paul Hierophant",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/paul_hierophant.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/paulhierophant/",
+            "facebook": "https://www.facebook.com/paulhierophant",
+            "soundcloud": "https://soundcloud.com/hierophant",
+            "mixcloud": "https://www.mixcloud.com/hierophant/"
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": "State of Play"
+    },
+    "jay_sebastian": {
+        "name": "Jay Sebastian",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jay_sebastian.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/jay.agram/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/jay_sebastian/",
+            "mixcloud": "https://www.mixcloud.com/jaysebastian/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 7pm GMT"
+        },
+        "showname": "Solar Trip"
+    },
+    "dougie_dj": {
+        "name": "Dougie DJ",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dougie.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/dougie_dj_/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/dougie_dj",
+            "mixcloud": "https://www.mixcloud.com/dougie_dj/"
+        },
+        "timeslot": {
+            "day": "Monday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": ""
+    },
+    "dj_fiddlestix": {
+        "name": "Dj Fiddlestix",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dj_fiddlestix.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/dj_fiddlestix/",
+            "facebook": "https://www.facebook.com/FiddlestixDJ",
+            "soundcloud": "https://soundcloud.com/djfiddlestix",
+            "mixcloud": "https://www.mixcloud.com/DJFiddlestix/"
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": "The Friday Groove"
+    },
+    "ruralhifi": {
+        "name": "RuralHifi",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/ruralhifi.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/ruralhifi/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/ali-cubitt",
+            "mixcloud": "https://www.mixcloud.com/alicubitt/"
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": "Ali Cubitt"
+    },
+
+    "king": {
+        "name": "Rural HiFi - Takeover",
+        "images": {
+            "instagram_normal": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/instagram/ruralhifi.jpg",
+            "photo": ""
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/ruralhifi/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/ali-cubitt",
+            "mixcloud": "https://www.mixcloud.com/alicubitt/"
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": "Chris King"
+    },
+
+    "localist": {
+        "name": "Localist",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/localist.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/localis.t/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/itz_mej",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": "From the Flipside"
+    },
+    "jeff_higgins": {
+        "name": "Jeff Higgins",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jeff_higgins.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/jeff._.higgins/",
+            "facebook": "https://www.facebook.com/jeff.higgins.7",
+            "soundcloud": "https://soundcloud.com/rushbrookemusic",
+            "mixcloud": "https://www.mixcloud.com/jeff-higgins/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 7pm GMT"
+        },
+        "showname": ""
+    },
+    "dj_programma": {
+        "name": "DJ Programma",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dj_programma.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/djprogramma/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/pro-gramma",
+            "mixcloud": "https://www.mixcloud.com/programma/"
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": ""
+    },
+    "blason": {
+        "name": "Blason",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/blason.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/finleybartram/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/blasons",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": "Bite Back"
+    },
+    "whothebuck": {
+        "name": "WhoTheBuck",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/who_the_buck.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/whothebuck_/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/whothebuck",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "Live: 4pm GMT"
+        },
+        "showname": ""
+    },
+    "bostock": {
+        "name": "Bostock",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/bostock.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/b.ostock/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/bostocked",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": "Diamonds In The Rough"
+    },
+    "no_requests": {
+        "name": "No Requests",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/no_requests.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/norequests_/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": "https://www.mixcloud.com/NoRequestsMusic/"
+        },
+        "timeslot": {
+            "day": "Wednesday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": ""
+    },
+    "marc_noble": {
+        "name": "Marc Noble",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/marc_noble.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/marcnoble_music/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/marc_noble",
+            "mixcloud": "https://www.mixcloud.com/marcnoble_dj/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 7pm GMT"
+        },
+        "showname": ""
+    },
+    "dave_lazy": {
+        "name": "Dave Lazy",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dave_lazy.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/djdavelazy/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": "Dave Lazy Express"
+    },
+    "yus": {
+        "name": "Yus",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/yus.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/yusifal/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/yus_bagoose",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "Live: 8pm GMT"
+        },
+        "showname": ""
+    },
+    "schoon_jr": {
+        "name": "Schoon Jr",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/schoon_jr.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/schoonjr/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/user-827399304",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Thursday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": ""
+    },
+    "mister_huckstep": {
+        "name": "Mister Huckstep",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/mister_huckstep.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/jay_huckstep/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": "https://www.mixcloud.com/mister_huckstep/"
+        },
+        "timeslot": {
+            "day": "Friday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": "Eyes Look Left"
+    },
+    "jay_wesley": {
+        "name": "Jay Wesley",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/jay_wesley.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/dj_jay_wesley/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 10am GMT"
+        },
+        "showname": "Get Up 2 Get Down"
+    },
+    "aj_vidal": {
+        "name": "AJ Vidal",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/aj_vidal.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/vinylveggie/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 12pm GMT"
+        },
+        "showname": "Spiritual Funk"
+    },
+    "niknak": {
+        "name": "NikNak",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/niknak.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/niknakdjmusic/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/niknakdjmusic",
+            "mixcloud": "https://www.mixcloud.com/niknakdjmusic/"
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 2pm GMT"
+        },
+        "showname": ""
+    },
+    "london_house_music_workz": {
+        "name": "London House Music Workz",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/london_house_music_workz.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/london_house_music_workz/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/lhmworkz-150287006",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Saturday",
+            "time": "Live: 4pm GMT"
+        },
+        "showname": ""
+    },
+
+    "blind_poses": {
+        "name": "Jono Crabbe",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/blind_poses.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/blindposes/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/blindposes",
+            "mixcloud": "https://www.mixcloud.com/blindposes/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 10am GMT"
+        },
+        "showname": "Dolphin Days"
+    },
+    "fren": {
+        "name": "Franni",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/fren.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/thenotsorealfren/",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": "https://www.mixcloud.com/frenishere/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 12pm GMT"
+        },
+        "showname": "Total Luxury"
+    },
+    "mister_trim": {
+        "name": "Mister Trim",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/mister_trim.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/mistertrim_/",
+            "facebook": "https://www.facebook.com/toshclub/",
+            "soundcloud": "https://soundcloud.com/mrtrim/",
+            "mixcloud": "https://www.mixcloud.com/mrtrim/"
+        },
+        "timeslot": {
+            "day": "Sunday",
+            "time": "Live: 2pm GMT"
+        },
+        "showname": "Social Sound"
+    },
+    "dan_speed": {
+        "name": "Dan Speed",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/dan_speed.jpg"
+        },
+        "social_media": {
+            "instagram": "https://www.instagram.com/speedyman_records/",
+            "facebook": "",
+            "soundcloud": "https://soundcloud.com/speedymanrecords",
+            "mixcloud": "https://www.mixcloud.com/DanSpeed/"
+        },
+        "timeslot": {
+            "day": "Monday",
+            "time": "Live: 6pm GMT"
+        },
+        "showname": "Speedyman Records"
+    },
+    "savio": {
+        "name": "Savio",
+        "images": {
+            "photo": "https://cratedigs.s3.eu-west-2.amazonaws.com/dj/photos/savio.jpg"
+        },
+        "social_media": {
+            "instagram": "",
+            "facebook": "",
+            "soundcloud": "",
+            "mixcloud": ""
+        },
+        "timeslot": {
+            "day": "Tuesday",
+            "time": "Live: 10pm GMT"
+        },
+        "showname": ""
+    }
+}
