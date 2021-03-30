@@ -1,4 +1,5 @@
-.audio-player {
+.audio-player-one,
+.audio-player-two {
     width: 100%;
     background: #0a0a0b;
     box-shadow: 0 0 20px 0 #000a;
@@ -8,8 +9,15 @@
     display: grid;
     grid-template-rows: 6px auto;
     position: fixed;
-    bottom: 0;
     z-index: 400;
+}
+
+.audio-player-one {
+    bottom: 135px;
+}
+
+.audio-player-two {
+    bottom: 0;
 }
 
 .controls {
@@ -39,7 +47,8 @@
     font-weight: bold;
 }
 
-.play-container {
+.play-container-one,
+.play-container-two {
     width: 100px;
     height: 100px;
     padding: 2rem;
@@ -224,11 +233,13 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     font-size: 18px;
 }
 
-.audio-player {
+.audio-player-one,
+.audio-player-two {
     height: 135px;
 }
 
-.audio-player .controls .toggle-play.play {
+.audio-player-one .controls-one .toggle-play.play,
+.audio-player-two .controls-two .toggle-play.play {
     border: 17px solid #0000;
     border-left: 23px solid white;
     margin: 0;
@@ -239,7 +250,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     cursor: pointer;
 }
 
-.audio-player .controls .toggle-play.pause:after {
+.audio-player-one .controls-one .toggle-play.pause:after,
+.audio-player-two .controls-two .toggle-play.pause:after {
     position: absolute;
     top: 0;
     right: -4px;
@@ -249,7 +261,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     width: 8px;
 }
 
-.audio-player .controls .toggle-play.pause:before {
+.audio-player-one .controls-one .toggle-play.pause:before,
+.audio-player-two .controls-two .toggle-play.pause:before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -259,7 +272,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     width: 8px;
 }
 
-.audio-player .controls .toggle-play.pause {
+.audio-player-one .controls-one .toggle-play.pause,
+.audio-player-two .controls-two .toggle-play.pause {
     height: 58px;
     width: 20px;
     cursor: pointer;
@@ -268,14 +282,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     top: 12px;
 }
 
-.audio-player .controls .toggle-play.play:hover {
+.audio-player-one .controls-one .toggle-play.play:hover,
+.audio-player-two .controls-two .toggle-play.play:hover {
     transform: scale(1);
 }
-
-
-/* .play-container {
-    position: relative;
-    top: 9px;
-    margin: 0;
-    left: 50px;
-} */

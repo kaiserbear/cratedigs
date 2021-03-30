@@ -19,9 +19,30 @@ function GetClock() {
 }
 
 
-function getStationInfo(callback) {
+function getStreamOne(callback) {
 
     var jqxhr = $.get("https://cratedigs.radioca.st/status-json.xsl", function() {
+
+        })
+        .done(function(data) {
+            var dataSet = data.icestats.source
+            if (dataSet.title == undefined) {
+                var stationNowPlaying = dataSet[0].title
+                var genre = dataSet[0].genre
+            } else {
+                var stationNowPlaying = dataSet.title
+                var genre = dataSet.genre
+            }
+            callback(stationNowPlaying, genre);
+        })
+        .fail(function() {
+            // alert("error"); // Should work on something here for when the server goes down. 
+        });
+}
+
+function getStreamTwo(callback) {
+
+    var jqxhr = $.get("https://cratedigsTwo.radioca.st/status-json.xsl", function() {
 
         })
         .done(function(data) {
@@ -45,28 +66,55 @@ function getDJinfo() {
     var jqxhr = $.get("https://cratedigs.s3.eu-west-2.amazonaws.com/artists.json", function(data) {})
         .done(function(data) {
 
-            function myCallback(stationNowPlaying, genre) {
+            function myCallbackOne(stationNowPlaying, genre) {
 
                 if (data[stationNowPlaying] !== undefined) {
-                    updateStationDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
+                    updateSteamOneDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
                 } else {
-                    updateStationDetails(stationNowPlaying, genre, null, null, null);
+                    updateSteamOneDetails(stationNowPlaying, genre, null, null, null);
                 }
             }
-            getStationInfo(myCallback);
 
-            function updateStationDetails(artistName, showname, showtime, image) {
-                $('.artistName').text(artistName);
-                $('.showname').text(showname);
-                $('.showtime').text(showtime);
+            function myCallbackTwo(stationNowPlaying, genre) {
+
+                if (data[stationNowPlaying] !== undefined) {
+                    updateSteamTwoDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
+                } else {
+                    updateSteamTwoDetails(stationNowPlaying, genre, null, null, null);
+                }
+            }
+
+            getStreamOne(myCallbackOne);
+            getStreamTwo(myCallbackTwo);
+
+
+            function updateSteamOneDetails(artistName, showname, showtime, image) {
+                $('.artistNameOne').text(artistName);
+                $('.shownameOne').text(showname);
+                $('.showtimeOne').text(showtime);
                 if (image !== null) {
-                    $('.play-container').css({
+                    $('.play-container-one').css({
                         "background": "url(" + image + ")",
                         "background-size": "contain",
                         "background-repeat": "no-repeat"
                     });
                 } else if (image == null) {
-                    $('.play-container').removeAttr("style");
+                    $('.play-container-one').removeAttr("style");
+                }
+            }
+
+            function updateSteamTwoDetails(artistName, showname, showtime, image) {
+                $('.artistNameTwo').text(artistName);
+                $('.shownameTwo').text(showname);
+                $('.showtimeTwo').text(showtime);
+                if (image !== null) {
+                    $('.play-container-two').css({
+                        "background": "url(" + image + ")",
+                        "background-size": "contain",
+                        "background-repeat": "no-repeat"
+                    });
+                } else if (image == null) {
+                    $('.play-container-two').removeAttr("style");
                 }
             }
 
@@ -88,7 +136,6 @@ function activeDay() {
 
 function shopify() {
     if ($("#collection-component-1615475004886").is(':empty')) {
-
         (function() {
             var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
             if (window.ShopifyBuy) {

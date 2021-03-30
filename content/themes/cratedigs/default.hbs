@@ -73,25 +73,40 @@
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
 
-    <div class="audio-player" style="position: fixed; bottom: 0; z-index: 400;">
- 
-        <div class="controls">
-            <div class="play-container">
-            <div class="toggle-play play">
+    <div class="audio-player-one">
+        <div class="controls-one">
+            <div class="play-container-one">
+                <div class="toggle-play play"></div>
             </div>
         </div>
         <div class="details">
-            <div class="artistName"></div>
+            <div class="artistNameOne"></div>
             <div class="showname"></div>
             <div class="live">
                 <div class="showtime"></div>
             </div>
          </div>
-
+    </div>
+    <div class="audio-player-two">
+        <div class="controls-two">
+            <div class="play-container-two">
+                <div class="toggle-play play"></div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="artistNameTwo"></div>
+            <div class="showname"></div>
+            <div class="live">
+                <div class="showtime"></div>
+            </div>
+         </div>
     </div>
 
-    <script language="javascript" type="text/javascript" src="/assets/js/streaminfo.js?110321"></script>
+
+   
     <script language="javascript" type="text/javascript" src="/assets/js/audio-player.js?0103"></script>
+    <script language="javascript" type="text/javascript" src="/assets/js/streaminfo.js?110321"></script>
+    <script language="javascript" type="text/javascript" src="/assets/js/cratedigs.js?0103"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
