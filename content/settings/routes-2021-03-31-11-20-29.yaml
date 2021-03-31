@@ -1,7 +1,4 @@
 routes:
-  /artists-directory/:
-    template: artists
-    content_type: application/json
 
 collections:
   /:
@@ -11,5 +8,3 @@ collections:
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
-
-
