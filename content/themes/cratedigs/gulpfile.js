@@ -61,6 +61,19 @@ function css(done) {
     ], handleError(done));
 }
 
+function js(done) {
+    pump([
+        src([
+            // pull in lib files first so our own code can depend on it
+            'assets/js/lib/*.js',
+            'assets/js/*.js'
+        ], { sourcemaps: true }),
+        concat('casper.js'),
+        uglify(),
+        dest('assets/built/', { sourcemaps: '.' }),
+        livereload()
+    ], handleError(done));
+}
 
 function zipper(done) {
     const filename = require('./package.json').name + '.zip';

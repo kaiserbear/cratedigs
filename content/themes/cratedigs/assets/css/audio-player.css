@@ -13,11 +13,20 @@
 }
 
 .audio-player-one {
+    bottom: 0;
+}
+
+.audio-play-one.multi {
     bottom: 135px;
 }
 
 .audio-player-two {
     bottom: 0;
+    display: none;
+}
+
+.audio-player-two.show {
+    display: inherit;
 }
 
 .controls {

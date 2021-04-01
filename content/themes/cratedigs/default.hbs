@@ -64,7 +64,6 @@
         crossorigin="anonymous">
     </script>
     {{!-- Fitvids (for responsive video embeds), infinite scroll, floating header, and gallery card support --}}
-    <script src="{{asset "built/casper.js"}}"></script>
 
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
@@ -73,7 +72,7 @@
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
 
-    <div class="audio-player-one">
+    <div id="player1" class="audio-player-one">
         <div class="controls-one">
             <div class="play-container-one">
                 <div id="play-one" class="toggle-play play"></div>
@@ -87,7 +86,7 @@
             </div>
          </div>
     </div>
-    <div class="audio-player-two">
+    <div id="player2" class="audio-player-two">
         <div class="controls-two">
             <div class="play-container-two">
                 <div id="play-two" class="toggle-play play"></div>
@@ -105,13 +104,14 @@
 
    
     <script language="javascript" type="text/javascript" src="/assets/built/audio-player.js"></script>
-    <script language="javascript" type="text/javascript" src="/assets/js/streaminfo.js?110321"></script>
-    <script language="javascript" type="text/javascript" src="/assets/js/cratedigs.js?0103"></script>
+    <script language="javascript" type="text/javascript" src="/assets/built/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="/assets/built/cratedigs.js"></script>
+     <script language="javascript" type="text/javascript" src="/assets/built/shopify.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
 
-    <script language="javascript" type="text/javascript" src="/assets/js/calendar.js?280221"></script>
+    <script language="javascript" type="text/javascript" src="/assets/built/calendar.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script language="javascript" type="text/javascript" src="/assets/js/SwupBodyClassPlugin.min.js"></script>
     
