@@ -15,12 +15,16 @@
     width: 100%;
 }
 
+.showname {
+    font-size: 12px;
+}
+
 .details {
     position: relative;
     color: #fff;
     float: left;
     top: 25px;
-    width: auto;
+    width: calc(100% - 100px);
 }
 
 .details img {
@@ -280,6 +284,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     float: left;
     display: block;
     top: 22px;
+    width: 100px;
 }
 
 @media (min-width: 400px) {
@@ -291,6 +296,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     }
     .artistName {
         font-size: 18px;
+    }
+    .showname {
+        font-size: inehrit;
     }
 }
 
