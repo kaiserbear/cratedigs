@@ -12,7 +12,15 @@
 }
 
 .audio-player .container {
-    width: auto;
+    width: 100%;
+}
+
+.details {
+    position: relative;
+    color: #fff;
+    float: left;
+    top: 25px;
+    width: 400px;
 }
 
 .details img {
@@ -26,8 +34,10 @@
 .artistName {
     text-align: left;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     float: left;
+    width: 100%;
+    display: contents;
 }
 
 .audio-player-one {
@@ -265,18 +275,19 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     top: 26px;
 }
 
+.audio-player .controls {
+    position: relative;
+    float: left;
+    display: block;
+    top: 22px;
+}
+
 @media (min-width: 400px) {
     .details {
         position: relative;
         color: #fff;
         float: left;
         top: 13px;
-    }
-    .audio-player .controls {
-        position: relative;
-        float: left;
-        display: block;
-        top: 22px;
     }
     .artistName {
         font-size: 18px;
@@ -289,5 +300,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     }
     .details img {
         display: block;
+    }
+    .audio-player .container {
+        width: auto;
     }
 }
