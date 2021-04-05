@@ -80,7 +80,6 @@ function getDJinfo() {
                 if (data[stationNowPlaying] !== undefined) {
                     updateSteamTwoDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
                 } else {
-                    console.log(stationNowPlaying);
                     updateSteamTwoDetails(stationNowPlaying, genre, null, null, null);
                 }
             }
@@ -103,10 +102,8 @@ function getDJinfo() {
                 $('.shownameOne').text(showname);
                 $('.showtimeOne').text(showtime);
                 if (image !== null) {
-                    $('.play-container-one').css({
-                        "background": "url(" + image + ")",
-                        "background-size": "contain",
-                        "background-repeat": "no-repeat"
+                    $('.imageOne').attr({
+                        "src": image
                     });
                 } else if (image == null) {
                     $('.play-container-one').removeAttr("style");
@@ -118,10 +115,8 @@ function getDJinfo() {
                 $('.shownameTwo').text(showname);
                 $('.showtimeTwo').text(showtime);
                 if (image !== null) {
-                    $('.play-container-two').css({
-                        "background": "url(" + image + ")",
-                        "background-size": "contain",
-                        "background-repeat": "no-repeat"
+                    $('.imageTwo').attr({
+                        "src": image
                     });
                 } else if (image == null) {
                     $('.play-container-two').removeAttr("style");

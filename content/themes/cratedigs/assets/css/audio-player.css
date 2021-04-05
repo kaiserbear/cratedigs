@@ -1,5 +1,4 @@
-.audio-player-one,
-.audio-player-two {
+.audio-player {
     width: 100%;
     background: #0a0a0b;
     box-shadow: 0 0 20px 0 #000a;
@@ -10,6 +9,24 @@
     grid-template-rows: 6px auto;
     position: fixed;
     z-index: 400;
+}
+
+.audio-player .container {
+    width: auto;
+}
+
+.details img {
+    position: relative;
+    display: none;
+    float: left;
+    margin-right: 2rem;
+}
+
+.artistName {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
 }
 
 .audio-player-one {
@@ -29,15 +46,10 @@
     display: inherit;
 }
 
-.controls {
-    width: auto;
-    margin: auto;
-}
-
-.details {
-    float: left;
-    color: white;
-    margin-top: 5px;
+.controls-one,
+.controls-two {
+    /* width: auto;
+    margin: auto; */
 }
 
 .site-footer {
@@ -45,9 +57,10 @@
 }
 
 .audio-player .controls {
+    /* left: -90px;
     justify-content: space-between;
-    top: 16px;
-    position: relative;
+    top: 23px;
+    position: relative; */
 }
 
 .ccc_streaminfo {
@@ -56,17 +69,20 @@
     font-weight: bold;
 }
 
-.play-container-one,
-.play-container-two {
-    width: 100px;
-    height: 100px;
-    padding: 2rem;
-    background: url(/assets/img/image-player.png);
-    background-size: contain;
-    text-align: center;
-    vertical-align: text-top;
+.play-container {
+    width: 85px;
+    height: 85px;
     float: left;
     margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.play-container-one {
+    background: #2593F9;
+}
+
+.play-container-two {
+    background: #F29912;
 }
 
 .audio-player .controls .toggle-play.pause:hover {
@@ -79,42 +95,6 @@
 
 .audio-player .controls .time>* {
     padding: 2px;
-}
-
-.audio-player .controls .volume-container {
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-}
-
-.audio-player .controls .volume-container .volume-button {
-    display: flex;
-    align-items: center;
-    float: right;
-    top: -9px;
-    position: relative;
-}
-
-.audio-player .controls .volume-container .volume-button .volume {
-    transform: scale(0.7);
-}
-
-.audio-player .controls .volume-container .volume-slider {
-    position: relative;
-    height: 15px;
-    background: white;
-    box-shadow: 0 0 20px #000a;
-    transition: 0.25s;
-    float: right;
-    width: 130px;
-    display: none;
-}
-
-.audio-player .controls .volume-container .volume-slider .volume-percentage {
-    background: red;
-    height: 100%;
-    width: 100%;
 }
 
 
@@ -203,8 +183,6 @@
     }
 }
 
-.controls .live {}
-
 .cc_streaminfo-cd {
     display: none;
 }
@@ -237,30 +215,22 @@ audio::-webkit-media-controls-rewind-button,
 audio::-webkit-media-controls-return-to-realtime-button,
 audio::-webkit-media-controls-toggle-closed-captions-button {}
 
-.artistName {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.audio-player-one,
-.audio-player-two {
+.audio-player {
     height: 135px;
 }
 
-.audio-player-one .controls-one .toggle-play.play,
-.audio-player-two .controls-two .toggle-play.play {
-    border: 17px solid #0000;
-    border-left: 23px solid white;
+.audio-player .controls .toggle-play.play {
+    border: 17px solid transparent;
+    border-left: 23px solid #fff;
     margin: 0;
     padding: 0;
-    left: 21px;
-    top: 11px;
+    left: 35px;
+    top: 25px;
     position: relative;
     cursor: pointer;
 }
 
-.audio-player-one .controls-one .toggle-play.pause:after,
-.audio-player-two .controls-two .toggle-play.pause:after {
+.audio-player .controls .toggle-play.pause:after {
     position: absolute;
     top: 0;
     right: -4px;
@@ -270,8 +240,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     width: 8px;
 }
 
-.audio-player-one .controls-one .toggle-play.pause:before,
-.audio-player-two .controls-two .toggle-play.pause:before {
+.audio-player .controls .toggle-play.pause:before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -281,17 +250,43 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     width: 8px;
 }
 
-.audio-player-one .controls-one .toggle-play.pause,
-.audio-player-two .controls-two .toggle-play.pause {
+.audio-player .controls .toggle-play.pause {
     height: 58px;
     width: 20px;
     cursor: pointer;
     position: relative;
-    left: 18px;
-    top: 12px;
+    left: 31px;
+    top: 24px;
 }
 
-.audio-player-one .controls-one .toggle-play.play:hover,
-.audio-player-two .controls-two .toggle-play.play:hover {
+.audio-player .controls-one .toggle-play.play:hover {
     transform: scale(1);
+    top: 26px;
+}
+
+@media (min-width: 400px) {
+    .details {
+        position: relative;
+        color: #fff;
+        float: left;
+        top: 13px;
+    }
+    .audio-player .controls {
+        position: relative;
+        float: left;
+        display: block;
+        top: 22px;
+    }
+    .artistName {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 800px) {
+    .artistName {
+        font-size: 30px;
+    }
+    .details img {
+        display: block;
+    }
 }
