@@ -20,7 +20,7 @@
     color: #fff;
     float: left;
     top: 25px;
-    width: 400px;
+    width: auto;
 }
 
 .details img {
@@ -303,5 +303,8 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     }
     .audio-player .container {
         width: auto;
+    }
+    .details {
+        width: 400px;
     }
 }
