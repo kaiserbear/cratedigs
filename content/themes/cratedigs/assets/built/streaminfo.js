@@ -48,7 +48,6 @@ function getStreamTwo(callback) {
 
         })
         .done(function(data) {
-            console.log(data);
 
             var stationNowPlaying = data.songtitle
             var genre = data.servergenre
