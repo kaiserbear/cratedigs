@@ -108,7 +108,9 @@ function getDJinfo() {
                         "src": image
                     });
                 } else if (image == null) {
-                    $('.play-container-one').removeAttr("style");
+                    $('.imageOne').attr({
+                        "src": "/assets/img/image-player.png"
+                    });
                 }
                 if (showtime === null) {
                     $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
