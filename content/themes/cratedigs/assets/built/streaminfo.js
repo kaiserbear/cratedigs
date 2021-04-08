@@ -48,7 +48,7 @@ function getStreamTwo(callback) {
 
         })
         .done(function(data) {
-            console.log(data);
+            // console.log(data);
 
             var stationNowPlaying = data.songtitle
             var genre = data.servergenre
@@ -99,7 +99,9 @@ function getDJinfo() {
 
             function updateSteamOneDetails(artistName, showname, showtime, image) {
                 $('.artistNameOne').text(artistName);
-                $('.shownameOne').text(showname);
+                if (showname !== "Off Air") {
+                    $('.shownameOne').text(showname);
+                }
                 $('.showtimeOne').text(showtime);
                 if (image !== null) {
                     $('.imageOne').attr({
@@ -107,6 +109,9 @@ function getDJinfo() {
                     });
                 } else if (image == null) {
                     $('.play-container-one').removeAttr("style");
+                }
+                if (showtime === null) {
+                    $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
                 }
             }
 

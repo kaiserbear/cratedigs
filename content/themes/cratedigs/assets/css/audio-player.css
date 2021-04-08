@@ -13,20 +13,29 @@
 
 .audio-player .container {
     width: auto;
+    padding: 2rem 0;
 }
 
-.details img {
+.audio-player img {
     position: relative;
     display: none;
     float: left;
     margin-right: 2rem;
 }
 
+.artistName,
+.showname {
+    width: 100%;
+}
+
 .artistName {
     text-align: left;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    float: left;
+}
+
+.showname {
+    font-size: 16px;
 }
 
 .audio-player-one {
@@ -202,18 +211,33 @@
     top: 26px;
 }
 
+.audio-player .controls,
+.audio-player .details {
+    float: left;
+}
+
+.live span,
+.live div {
+    display: inline-block;
+}
+
+.live span {
+    color: grey;
+    margin-right: 5px;
+}
+
 @media (min-width: 400px) {
     .details {
         position: relative;
         color: #fff;
         float: left;
-        top: 13px;
+        top: 10px;
     }
     .audio-player .controls {
         position: relative;
         float: left;
         display: block;
-        top: 22px;
+        /* top: 22px; */
     }
     .artistName {
         font-size: 18px;
@@ -228,13 +252,21 @@
 
 @media (min-width: 800px) {
     .artistName {
-        font-size: 30px;
+        font-size: 20px;
     }
-    .details img {
+    .audio-player img {
         display: block;
     }
     .audio-player .container {
-        width: auto;
+        width: 100%;
+        padding: 1.5rem 0;
     }
-    .details {}
+    .audio-player .controls {
+        position: absolute;
+        display: block;
+        left: calc(50% - 48px);
+    }
+    .audio-player img {
+        margin-left: 2rem;
+    }
 }

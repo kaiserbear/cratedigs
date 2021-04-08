@@ -12,7 +12,7 @@ const streamTwo = new Audio(
 $("#volume").slider({
     min: 0,
     max: 100,
-    value: 0,
+    value: 50,
     range: "min",
     slide: function(event, ui) {
         setVolume(ui.value / 100);

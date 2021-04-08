@@ -17,12 +17,6 @@ h1 {
     text-align: center;
 }
 
-@media (max-width: 400px) {
-    .details {
-        max-width: 163px;
-    }
-}
-
 .post-full-content #clockbox,
 .country-info {
     font-family: "Apercu";

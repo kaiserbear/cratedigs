@@ -9,6 +9,7 @@
  * as described in https://developers.google.com/api-client-library/javascript/start/start-js
  */
 
+var nextLiveEvent = ['<div>'];
 
 function printCalendar() {
     // The "Calendar ID" from your calendar settings page, "Calendar Integration" secion:
@@ -46,13 +47,19 @@ function printCalendar() {
             var calendarRows = ['<div>'];
             var printDay = '';
 
-            response.result.items.forEach(function(entry) {
+            response.result.items.forEach(function(entry, i) {
 
                 var artistTime = entry.start.dateTime;
-
                 var dayOfWeek = moment(artistTime).format("dddd ll");
                 var dateOfWeek = moment(artistTime).format("ll");
                 var time = moment(entry.start.dateTime).format("LT");
+
+                // if this is the next available slot 
+
+                if (i === 0) {
+                    console.log(entry.summary);
+                    nextLiveEvent.push(`${entry.summary}</div>`);
+                }
 
                 if (dayOfWeek === printDay) {} else if (dayOfWeek !== printDay) {
                     printDay = dayOfWeek;
@@ -70,6 +77,7 @@ function printCalendar() {
             if ($('#schedule').length > 0) {
                 $('#schedule').html(calendarRows.join(""));
             }
+
         }
 
 
@@ -77,6 +85,8 @@ function printCalendar() {
         console.log('Error: ' + reason.result.error.message);
     });
 };
+
+
 
 // Loads the JavaScript client library and invokes `start` afterwards.
 gapi.load('client', printCalendar);
