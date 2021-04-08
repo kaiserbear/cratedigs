@@ -218,15 +218,12 @@
     .artistName {
         font-size: 18px;
     }
-<<<<<<< Updated upstream
-=======
     .showname {
         font-size: inehrit;
     }
     .volume-control .volume-container {
         width: 400px;
     }
->>>>>>> Stashed changes
 }
 
 @media (min-width: 800px) {
@@ -236,11 +233,8 @@
     .details img {
         display: block;
     }
-<<<<<<< Updated upstream
-=======
     .audio-player .container {
         width: auto;
     }
     .details {}
->>>>>>> Stashed changes
 }
