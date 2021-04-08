@@ -57,7 +57,6 @@ function printCalendar() {
                 // if this is the next available slot 
 
                 if (i === 0) {
-                    console.log(entry.summary);
                     nextLiveEvent.push(`${entry.summary}</div>`);
                 }
 
