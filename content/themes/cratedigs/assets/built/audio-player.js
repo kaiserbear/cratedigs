@@ -9,19 +9,18 @@ const streamTwo = new Audio(
 //toggle between playing and pausing on button click
 // This all needs massive refinement
 
-// $("#volume").slider({
-//     min: 0,
-//     max: 100,
-//     value: 0,
-//     range: "min",
-//     slide: function(event, ui) {
-//         setVolume(ui.value / 100);
-//     }
-// });
+$("#volume").slider({
+    min: 0,
+    max: 100,
+    value: 50,
+    range: "min",
+    slide: function(event, ui) {
+        setVolume(ui.value / 100);
+    }
+});
 
 function setVolume(myVolume) {
-    var myMedia = document.getElementById('myMedia');
-    myMedia.volume = myVolume;
+    streamOne.volume = myVolume;
 }
 
 const playBtnOne = document.getElementById("play-one");
@@ -32,7 +31,6 @@ function playStreamOne() {
     playBtnOne.classList.add("pause", "playing");
     streamOne.play();
 }
-
 
 function playStreamTwo() {
     playBtnTwo.classList.remove("play");

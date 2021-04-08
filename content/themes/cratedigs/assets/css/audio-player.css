@@ -12,22 +12,11 @@
 }
 
 .audio-player .container {
-    width: 100%;
+    width: auto;
+    padding: 2rem 0;
 }
 
-.showname {
-    font-size: 12px;
-}
-
-.details {
-    position: relative;
-    color: #fff;
-    float: left;
-    top: 25px;
-    width: calc(100% - 100px);
-}
-
-.details img {
+.audio-player img {
     position: relative;
     display: none;
     float: left;
@@ -35,13 +24,19 @@
     width: 100px;
 }
 
+.artistName,
+.showname {
+    width: 100%;
+}
+
 .artistName {
     text-align: left;
-    font-size: 22px;
-    font-weight: 700;
-    float: left;
-    width: 100%;
-    display: contents;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.showname {
+    font-size: 16px;
 }
 
 .audio-player-one {
@@ -61,27 +56,83 @@
     display: inherit;
 }
 
-.controls-one,
-.controls-two {
-    /* width: auto;
-    margin: auto; */
-}
-
 .site-footer {
     display: none;
 }
 
-.audio-player .controls {
-    /* left: -90px;
-    justify-content: space-between;
-    top: 23px;
-    position: relative; */
+
+/* Volume Controls */
+
+.volume-control {
+    position: fixed;
+    bottom: 135px;
+    width: 100%;
+    height: 50px;
+    background: black;
+    z-index: 180;
+    text-align: center;
 }
 
-.ccc_streaminfo {
+#volume {
+    position: relative;
+    height: 5px;
+    background: #555;
+    border-radius: 15px;
+    top: 20px;
+    float: left;
+    width: calc(100% - 80px);
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#volume .ui-slider-range-min {
+    height: 5px;
+    width: 300px;
+    position: absolute;
+    background: #2ecc71;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#volume .ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.volume-control .volume-container {
     width: 100%;
-    margin-left: 16px;
-    font-weight: bold;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.volume-control i {
+    position: relative;
+    margin-top: -6px;
+    color: #666;
+    float: left;
+    display: inline-block;
+}
+
+.volume-control i.fa-volume-down {
+    top: 15px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.volume-control i.fa-volume-up {
+    right: 0;
+    top: 15px;
+    font-size: 24px;
+    margin-left: 12px;
 }
 
 .play-container {
@@ -111,124 +162,6 @@
 .audio-player .controls .time>* {
     padding: 2px;
 }
-
-
-/* HTML5 audio PLayer */
-
-#radio-player {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    right: 0;
-    background: white;
-    z-index: 400;
-}
-
-#radio-player audio {
-    width: 90%;
-    outline: none;
-    border: 1px solid #e8e8e8;
-    display: inline-block;
-    position: relative;
-    float: right;
-}
-
-.controls .label {
-    color: red;
-    font-size: 1.4rem;
-    margin: 0px 20px 0 20px;
-}
-
-.pulsating-circle {
-    position: relative;
-    transform: translateX(-50%) translateY(-50%);
-    width: 15px;
-    height: 15px;
-    top: -9px;
-    left: 4px;
-}
-
-.pulsating-circle:before {
-    content: "";
-    position: relative;
-    display: block;
-    width: 300%;
-    height: 300%;
-    box-sizing: border-box;
-    margin-left: -100%;
-    margin-top: -100%;
-    border-radius: 45px;
-    background-color: #ff0000;
-    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-}
-
-.pulsating-circle:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 15px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
-}
-
-@keyframes pulse-ring {
-    0% {
-        transform: scale(0.33);
-    }
-    80%,
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes pulse-dot {
-    0% {
-        transform: scale(0.8);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.8);
-    }
-}
-
-.cc_streaminfo-cd {
-    display: none;
-}
-
-.controls progress::-moz-progress-bar {
-    background-color: white;
-}
-
-.controls progress::-webkit-progress-value {
-    background-color: white;
-}
-
-audio::-webkit-media-controls-panel,
-video::-webkit-media-controls-panel {
-    background-color: white;
-}
-
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-timeline-container,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-volume-slider-container,
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-seek-back-button,
-audio::-webkit-media-controls-seek-forward-button,
-audio::-webkit-media-controls-fullscreen-button,
-audio::-webkit-media-controls-rewind-button,
-audio::-webkit-media-controls-return-to-realtime-button,
-audio::-webkit-media-controls-toggle-closed-captions-button {}
 
 .audio-player {
     height: 135px;
@@ -279,12 +212,19 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     top: 26px;
 }
 
-.audio-player .controls {
-    position: relative;
+.audio-player .controls,
+.audio-player .details {
     float: left;
-    display: block;
-    top: 22px;
-    width: 100px;
+}
+
+.live span,
+.live div {
+    display: inline-block;
+}
+
+.live span {
+    color: grey;
+    margin-right: 5px;
 }
 
 @media (min-width: 400px) {
@@ -292,7 +232,13 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
         position: relative;
         color: #fff;
         float: left;
-        top: 13px;
+        top: 10px;
+    }
+    .audio-player .controls {
+        position: relative;
+        float: left;
+        display: block;
+        /* top: 22px; */
     }
     .artistName {
         font-size: 18px;
@@ -300,19 +246,28 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     .showname {
         font-size: inehrit;
     }
+    .volume-control .volume-container {
+        width: 400px;
+    }
 }
 
 @media (min-width: 800px) {
     .artistName {
-        font-size: 30px;
+        font-size: 20px;
     }
-    .details img {
+    .audio-player img {
         display: block;
     }
     .audio-player .container {
-        width: auto;
+        width: 100%;
+        padding: 1.5rem 0;
     }
-    .details {
-        width: 400px;
+    .audio-player .controls {
+        position: absolute;
+        display: block;
+        left: calc(50% - 48px);
+    }
+    .audio-player img {
+        margin-left: 2rem;
     }
 }
