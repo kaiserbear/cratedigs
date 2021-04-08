@@ -22,6 +22,7 @@
     float: left;
     margin-right: 2rem;
     width: 100px;
+    border: 2px solid #dadada;
 }
 
 .artistName,
@@ -123,14 +124,14 @@
 }
 
 .volume-control i.fa-volume-down {
-    top: 15px;
+    top: 16px;
     font-size: 24px;
     margin-right: 10px;
 }
 
 .volume-control i.fa-volume-up {
     right: 0;
-    top: 15px;
+    top: 16px;
     font-size: 24px;
     margin-left: 12px;
 }
@@ -265,9 +266,70 @@
     .audio-player .controls {
         position: absolute;
         display: block;
-        left: calc(50% - 48px);
+        top: 16px;
+        right: 181px;
     }
     .audio-player img {
         margin-left: 2rem;
+    }
+    .play-container {
+        width: 45px;
+        height: 45px;
+        float: left;
+        margin-right: 2rem;
+        border-radius: 50%;
+    }
+    .audio-player .controls .toggle-play.play {
+        border: 12px solid transparent;
+        border-left: 17px solid #fff;
+        margin: 0;
+        padding: 0;
+        left: 16px;
+        top: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .volume-control {
+        position: fixed;
+        bottom: 10px;
+        width: auto;
+        height: 50px;
+        background: none;
+        z-index: 1000;
+        text-align: center;
+        right: 20px;
+    }
+    .audio-player .controls-one .toggle-play.play:hover {
+        transform: scale(1);
+        top: 10px;
+    }
+    .audio-player .controls .toggle-play.pause {
+        height: 58px;
+        width: 20px;
+        cursor: pointer;
+        position: relative;
+        left: 14px;
+        top: 12px;
+    }
+    .audio-player .controls .toggle-play.pause:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        content: "";
+        height: 20px;
+        width: 6px;
+    }
+    .audio-player .controls .toggle-play.pause:after {
+        position: absolute;
+        top: 0;
+        right: 3px;
+        background: #fff;
+        content: "";
+        height: 20px;
+        width: 6px;
+    }
+    .audio-player .controls .toggle-play.pause:hover {
+        transform: scale(1.0);
     }
 }
