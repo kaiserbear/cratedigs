@@ -46,27 +46,83 @@
     display: inherit;
 }
 
-.controls-one,
-.controls-two {
-    /* width: auto;
-    margin: auto; */
-}
-
 .site-footer {
     display: none;
 }
 
-.audio-player .controls {
-    /* left: -90px;
-    justify-content: space-between;
-    top: 23px;
-    position: relative; */
+
+/* Volume Controls */
+
+.volume-control {
+    position: fixed;
+    bottom: 135px;
+    width: 100%;
+    height: 50px;
+    background: black;
+    z-index: 180;
+    text-align: center;
 }
 
-.ccc_streaminfo {
+#volume {
+    position: relative;
+    height: 5px;
+    background: #555;
+    border-radius: 15px;
+    top: 20px;
+    float: left;
+    width: calc(100% - 80px);
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#volume .ui-slider-range-min {
+    height: 5px;
+    width: 300px;
+    position: absolute;
+    background: #2ecc71;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#volume .ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.volume-control .volume-container {
     width: 100%;
-    margin-left: 16px;
-    font-weight: bold;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.volume-control i {
+    position: relative;
+    margin-top: -6px;
+    color: #666;
+    float: left;
+    display: inline-block;
+}
+
+.volume-control i.fa-volume-down {
+    top: 15px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.volume-control i.fa-volume-up {
+    right: 0;
+    top: 15px;
+    font-size: 24px;
+    margin-left: 12px;
 }
 
 .play-container {
@@ -96,124 +152,6 @@
 .audio-player .controls .time>* {
     padding: 2px;
 }
-
-
-/* HTML5 audio PLayer */
-
-#radio-player {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    right: 0;
-    background: white;
-    z-index: 400;
-}
-
-#radio-player audio {
-    width: 90%;
-    outline: none;
-    border: 1px solid #e8e8e8;
-    display: inline-block;
-    position: relative;
-    float: right;
-}
-
-.controls .label {
-    color: red;
-    font-size: 1.4rem;
-    margin: 0px 20px 0 20px;
-}
-
-.pulsating-circle {
-    position: relative;
-    transform: translateX(-50%) translateY(-50%);
-    width: 15px;
-    height: 15px;
-    top: -9px;
-    left: 4px;
-}
-
-.pulsating-circle:before {
-    content: "";
-    position: relative;
-    display: block;
-    width: 300%;
-    height: 300%;
-    box-sizing: border-box;
-    margin-left: -100%;
-    margin-top: -100%;
-    border-radius: 45px;
-    background-color: #ff0000;
-    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-}
-
-.pulsating-circle:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 15px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
-}
-
-@keyframes pulse-ring {
-    0% {
-        transform: scale(0.33);
-    }
-    80%,
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes pulse-dot {
-    0% {
-        transform: scale(0.8);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.8);
-    }
-}
-
-.cc_streaminfo-cd {
-    display: none;
-}
-
-.controls progress::-moz-progress-bar {
-    background-color: white;
-}
-
-.controls progress::-webkit-progress-value {
-    background-color: white;
-}
-
-audio::-webkit-media-controls-panel,
-video::-webkit-media-controls-panel {
-    background-color: white;
-}
-
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-timeline-container,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-volume-slider-container,
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-seek-back-button,
-audio::-webkit-media-controls-seek-forward-button,
-audio::-webkit-media-controls-fullscreen-button,
-audio::-webkit-media-controls-rewind-button,
-audio::-webkit-media-controls-return-to-realtime-button,
-audio::-webkit-media-controls-toggle-closed-captions-button {}
 
 .audio-player {
     height: 135px;
@@ -280,6 +218,15 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     .artistName {
         font-size: 18px;
     }
+<<<<<<< Updated upstream
+=======
+    .showname {
+        font-size: inehrit;
+    }
+    .volume-control .volume-container {
+        width: 400px;
+    }
+>>>>>>> Stashed changes
 }
 
 @media (min-width: 800px) {
@@ -289,4 +236,11 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
     .details img {
         display: block;
     }
+<<<<<<< Updated upstream
+=======
+    .audio-player .container {
+        width: auto;
+    }
+    .details {}
+>>>>>>> Stashed changes
 }
