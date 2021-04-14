@@ -111,8 +111,10 @@ function getDJinfo() {
                         "src": "/assets/img/image-player.png"
                     });
                 }
-                // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
-                if (showtime.length < 0 || showtime === null) {
+
+                console.log(showtime)
+                    // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
+                if (showtime === null || $('.showtimeOne').isEmpty()) {
                     $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
                 }
 
