@@ -112,12 +112,11 @@ function getDJinfo() {
                     });
                 }
 
-                console.log(showtime)
-                    // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
-                if (showtime === null || $('.showtimeOne').isEmpty()) {
+                // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
+                if (showtime === null || $('.showtimeOne').is(':empty')) {
+                    $('.showtimeOne div').empty();
                     $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
                 }
-
             }
 
             function updateSteamTwoDetails(artistName, showname, showtime, image) {
