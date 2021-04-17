@@ -98,10 +98,7 @@ function getDJinfo() {
 
             function updateSteamOneDetails(artistName, showname, showtime, image) {
                 $('.artistNameOne').text(artistName);
-                if (showname !== "Off Air") {
-                    $('.shownameOne').text(showname);
-                }
-                $('.showtimeOne').text(showtime);
+
                 if (image !== null) {
                     $('.imageOne').attr({
                         "src": image
@@ -111,12 +108,23 @@ function getDJinfo() {
                         "src": "/assets/img/image-player.png"
                     });
                 }
-
-                // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
-                if (showtime === null || $('.showtimeOne').is(':empty')) {
-                    $('.showtimeOne div').empty();
-                    $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
+                $('.showtimeOne').text(showtime);
+                // $('.showtimeOne').text(showtime);
+                if (showname !== "Off Air") {
+                    console.log('check');
+                    $('.shownameOne').text(showname);
+                } else {
+                    if (showtime === null || $('.showtimeOne').is(':empty')) {
+                        $('.showtimeOne').html('');
+                        $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
+                    }
                 }
+
+                // // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
+                // if (showtime === null || $('.showtimeOne').is(':empty')) {
+                //     $('.showtimeOne div').remove();
+                //     $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
+                // }
             }
 
             function updateSteamTwoDetails(artistName, showname, showtime, image) {
