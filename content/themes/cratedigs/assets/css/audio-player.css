@@ -64,7 +64,7 @@
 .audio-player-live {
     width: 100%;
     position: relative;
-    height: 173px;
+    height: 173px!important;
     padding: 2rem;
 }
 
