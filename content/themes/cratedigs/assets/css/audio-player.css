@@ -61,21 +61,6 @@
     display: none;
 }
 
-.audio-player-live {
-    width: 100%;
-    position: relative;
-    height: 173px!important;
-    padding: 2rem;
-}
-
-.live-container {
-    width: 85px;
-    height: 85px;
-    float: left;
-    margin-right: 2rem;
-    border-radius: 50%;
-}
-
 
 /* Volume Controls */
 
@@ -183,8 +168,7 @@
     height: 135px;
 }
 
-.audio-player .controls .toggle-play.play,
-.live-player .controls .toggle-play.play {
+.audio-player .controls .toggle-play.play {
     border: 17px solid transparent;
     border-left: 23px solid #fff;
     margin: 0;
@@ -195,8 +179,7 @@
     cursor: pointer;
 }
 
-.audio-player .controls .toggle-play.pause:after,
-.live-player .controls .toggle-play.pause:after {
+.audio-player .controls .toggle-play.pause:after {
     position: absolute;
     top: 0;
     right: -4px;
@@ -206,8 +189,7 @@
     width: 8px;
 }
 
-.audio-player .controls .toggle-play.pause:before,
-.live-player .controls .toggle-play.pause:before {
+.audio-player .controls .toggle-play.pause:before {
     position: absolute;
     top: 0;
     left: 0px;
@@ -217,8 +199,7 @@
     width: 8px;
 }
 
-.audio-player .controls .toggle-play.pause,
-.live-player .controls .toggle-play.pause {
+.audio-player .controls .toggle-play.pause {
     height: 58px;
     width: 20px;
     cursor: pointer;
@@ -227,8 +208,7 @@
     top: 24px;
 }
 
-.audio-player .controls-one .toggle-play.play:hover,
-.live-player .controls-one .toggle-play.play:hover {
+.audio-player .controls-one .toggle-play.play:hover {
     transform: scale(1);
     top: 26px;
 }
