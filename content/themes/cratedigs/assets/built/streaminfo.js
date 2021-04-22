@@ -111,12 +111,15 @@ function getDJinfo() {
                 $('.showtimeOne').text(showtime);
                 // $('.showtimeOne').text(showtime);
                 if (showname !== "Off Air") {
-                    console.log('check');
                     $('.shownameOne').text(showname);
                 } else {
-                    if (showtime === null || $('.showtimeOne').is(':empty')) {
+                    if (showtime === null && $('.showtimeOne div').length === 0) {
                         $('.showtimeOne').html('');
                         $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
+                    } else if (showtime === null && $('.showtimeOne div').length > 0) {
+                        // Do nothing
+                    } else {
+                        $('.showtimeOne').html('');
                     }
                 }
 
