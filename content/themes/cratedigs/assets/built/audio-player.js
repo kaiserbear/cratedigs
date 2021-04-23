@@ -86,10 +86,10 @@ playBtnOne.addEventListener(
     false
 );
 
-playBtnTwo.addEventListener(
-    "click",
-    () => {
-        playStates(playBtnTwo.id)
-    },
-    false
-);
+// playBtnTwo.addEventListener(
+//     "click",
+//     () => {
+//         playStates(playBtnTwo.id)
+//     },
+//     false
+// );

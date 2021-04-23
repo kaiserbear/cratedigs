@@ -83,7 +83,9 @@ function getDJinfo() {
                 }
             }
 
-            // Get stream 1 on it's own. 
+            // Get stream 1 on it's own.
+
+
 
             getStreamOne(myCallbackOne);
             getStreamTwo(myCallbackTwo);
@@ -113,21 +115,13 @@ function getDJinfo() {
                 if (showname !== "Off Air") {
                     $('.shownameOne').text(showname);
                 } else {
-                    if (showtime === null && $('.showtimeOne div').length === 0) {
-                        $('.showtimeOne').html('');
+                    if (showtime === null) {
+                        console.log(nextLiveEvent);
                         $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
-                    } else if (showtime === null && $('.showtimeOne div').length > 0) {
-                        // Do nothing
-                    } else {
-                        $('.showtimeOne').html('');
                     }
                 }
 
-                // // If there' no live show time info, make an assumption there is no DJ playing, or we've already filled this spot with the next DJ info. 
-                // if (showtime === null || $('.showtimeOne').is(':empty')) {
-                //     $('.showtimeOne div').remove();
-                //     $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
-                // }
+
             }
 
             function updateSteamTwoDetails(artistName, showname, showtime, image) {
