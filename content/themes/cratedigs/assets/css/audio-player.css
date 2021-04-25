@@ -13,7 +13,8 @@
 
 .audio-player .container {
     width: auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    margin: 0 1rem;
 }
 
 .audio-player img {
@@ -158,18 +159,18 @@
 }
 
 .audio-player .controls {
-    width: 28%;
+    width: 85px;
     display: inline-block;
+    margin-right: 2rem;
 }
 
 .audio-player .details {
-    width: calc(70% - 2rem);
+    width: calc(68% - 2rem);
 }
 
 .audio-player .controls,
 .audio-player .details {
     display: inline-block;
-    margin-right: 1rem;
     float: left;
 }
 

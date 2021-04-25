@@ -517,7 +517,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #fff;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
-    font-size: 44px;
+    font-size: 34px;
 }
 
 .nav li a:hover {
