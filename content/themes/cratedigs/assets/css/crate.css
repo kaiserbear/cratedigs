@@ -120,7 +120,17 @@ h1 {
     display: none;
 }
 
+.page-radio .post-full-title {
+    display: none;
+}
+
 @media (min-width: 800px) {
+    .audio-player {
+        padding: 0;
+    }
+    .page-radio .post-full-title {
+        display: block;
+    }
     .chat-window {
         display: block;
         background: #d2d2d2;
