@@ -44,13 +44,13 @@ $toggleChat.click(function() {
         $(this).removeClass('open');
         $(this).addClass('closed').css({ 'transform': 'rotate(-180deg)' });
         $chatWindow.css({
-            "bottom": "-310px"
+            "bottom": "-121px"
         });
     } else {
         $(this).removeClass('closed');
         $(this).addClass('open').css({ 'transform': 'rotate(0)' });
         $chatWindow.css({
-            "bottom": "161px"
+            "bottom": "191px"
         })
     }
 

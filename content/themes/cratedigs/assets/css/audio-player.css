@@ -131,10 +131,11 @@
 }
 
 .volume-control i.fa-volume-up {
-    right: 0;
+    right: 15px;
     top: 16px;
     font-size: 24px;
     margin-left: 12px;
+    position: absolute;
 }
 
 .play-container {

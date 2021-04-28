@@ -133,20 +133,25 @@ h1 {
     }
     .chat-window {
         display: block;
-        background: #d2d2d2;
+        background: white;
         border: none;
-        width: 400px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         position: fixed;
-        bottom: 161px;
+        bottom: 191px;
         z-index: 390;
         right: 20px;
+        border: 1px solid #d2d2d2;
     }
     .chat-window iframe {
         border: none;
         width: 100%;
-        height: 500px;
-        padding: 3rem 0 0 0;
+        height: 330px;
+        padding: 3rem 0 0;
+        /* -webkit-transform: scale(0.95);
+        transform: scale(0.95); */
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
     }
     .chat-window .toggle {
         position: absolute;
@@ -154,6 +159,12 @@ h1 {
         top: 13px;
         font-size: 21px;
         cursor: pointer;
+        width: 91%;
+        text-align: right;
+        z-index: 1000;
+    }
+    .chat-window .toggle.closed {
+        text-align: left;
     }
     .chat-window h5 {
         font-size: 23px;
