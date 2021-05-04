@@ -6,6 +6,11 @@ const streamTwo = new Audio(
     "https://cratedigsTwo.radioca.st/stream"
 );
 
+
+// This stops IceCast registering listeners on new tabs being opened.
+streamOne.preload = "none";
+streamTwo.preload = "none";
+
 //toggle between playing and pausing on button click
 // This all needs massive refinement
 
@@ -51,7 +56,6 @@ function pauseStreamTwo() {
 }
 
 function playStates(thisClick) {
-
 
     if (thisClick === "play-one") {
         if (document.getElementById(thisClick).classList.contains("playing")) {

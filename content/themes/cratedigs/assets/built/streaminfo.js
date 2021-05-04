@@ -116,7 +116,6 @@ function getDJinfo() {
                     $('.shownameOne').text(showname);
                 } else {
                     if (showtime === null) {
-                        console.log(nextLiveEvent);
                         $('.showtimeOne').html("<span>Next live DJ: </span>" + nextLiveEvent.join(""));
                     }
                 }
