@@ -35,6 +35,7 @@ function playStreamOne() {
     playBtnOne.classList.remove("play");
     playBtnOne.classList.add("pause", "playing");
     streamOne.play();
+
 }
 
 function playStreamTwo() {
