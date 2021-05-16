@@ -1104,7 +1104,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     overflow: hidden;
     margin: 25px 0 50px;
-    background: color(var(--lightgrey) l(+10%));
+    background: #fff;
     border-radius: 3px;
 }
 
