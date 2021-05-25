@@ -2,14 +2,9 @@ const streamOne = new Audio(
     "https://cratedigs.radioca.st/stream"
 );
 
-const streamTwo = new Audio(
-    "https://cratedigsTwo.radioca.st/stream"
-);
-
 
 // This stops IceCast registering listeners on new tabs being opened.
 streamOne.preload = "none";
-streamTwo.preload = "none";
 
 //toggle between playing and pausing on button click
 // This all needs massive refinement
@@ -29,7 +24,6 @@ function setVolume(myVolume) {
 }
 
 const playBtnOne = document.getElementById("play-one");
-const playBtnTwo = document.getElementById("play-two");
 
 function playStreamOne() {
     playBtnOne.classList.remove("play");
@@ -38,23 +32,12 @@ function playStreamOne() {
 
 }
 
-function playStreamTwo() {
-    playBtnTwo.classList.remove("play");
-    playBtnTwo.classList.add("pause", "playing");
-    streamTwo.play();
-}
-
 function pauseStreamOne() {
     streamOne.pause();
     playBtnOne.classList.remove("pause", "playing");
     playBtnOne.classList.add("play");
 }
 
-function pauseStreamTwo() {
-    streamTwo.pause();
-    playBtnTwo.classList.remove("pause", "playing");
-    playBtnTwo.classList.add("play");
-}
 
 function playStates(thisClick) {
 
@@ -63,24 +46,10 @@ function playStates(thisClick) {
             pauseStreamOne();
             return
         } else {
-            if (!streamTwo.paused) {
-                pauseStreamTwo();
-            }
             playStreamOne();
         }
 
-    } else if (thisClick === "play-two") {
-        if (document.getElementById(thisClick).classList.contains("playing")) {
-            pauseStreamTwo();
-            return
-        } else {
-            if (!streamOne.paused) {
-                pauseStreamOne();
-            }
-            playStreamTwo();
-        }
     }
-
 }
 
 playBtnOne.addEventListener(
@@ -90,11 +59,3 @@ playBtnOne.addEventListener(
     },
     false
 );
-
-// playBtnTwo.addEventListener(
-//     "click",
-//     () => {
-//         playStates(playBtnTwo.id)
-//     },
-//     false
-// );

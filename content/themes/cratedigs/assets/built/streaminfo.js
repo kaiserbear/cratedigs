@@ -19,7 +19,6 @@ function GetClock() {
 }
 
 const playerOne = document.getElementById("player1");
-const playerTwo = document.getElementById("player2");
 
 function getStreamOne(callback) {
 
@@ -42,21 +41,6 @@ function getStreamOne(callback) {
         });
 }
 
-function getStreamTwo(callback) {
-
-    var jqxhr = $.get("https://cratedigstwo.radioca.st/stats?json=1", function() {
-
-        })
-        .done(function(data) {
-
-            var stationNowPlaying = data.songtitle
-            var genre = data.servergenre
-            callback(stationNowPlaying, genre);
-        })
-        .fail(function() {
-            // alert("error"); // Should work on something here for when the server goes down. 
-        });
-}
 
 
 function getDJinfo() {
@@ -73,29 +57,7 @@ function getDJinfo() {
                     updateSteamOneDetails(stationNowPlaying, genre, null, null, null);
                 }
             }
-
-            function myCallbackTwo(stationNowPlaying, genre) {
-
-                if (data[stationNowPlaying] !== undefined) {
-                    updateSteamTwoDetails(data[stationNowPlaying].name, data[stationNowPlaying].showname, data[stationNowPlaying].timeslot.time, data[stationNowPlaying].images.photo);
-                } else {
-                    updateSteamTwoDetails(stationNowPlaying, genre, null, null, null);
-                }
-            }
-
-            // Get stream 1 on it's own.
-
-
-
             getStreamOne(myCallbackOne);
-            getStreamTwo(myCallbackTwo);
-
-            // // Get stream 2 if it's there
-            // if (data.stream === 2) {
-
-            //     playerOne.classList.add('multi');
-            //     playerTwo.classList.add('show');
-            // }
 
 
             function updateSteamOneDetails(artistName, showname, showtime, image) {
@@ -124,19 +86,6 @@ function getDJinfo() {
 
             }
 
-            function updateSteamTwoDetails(artistName, showname, showtime, image) {
-                $('.artistNameTwo').text(artistName);
-                $('.shownameTwo').text(showname);
-                $('.showtimeTwo').text(showtime);
-                if (image !== null) {
-                    $('.imageTwo').attr({
-                        "src": image
-                    });
-                } else if (image == null) {
-                    $('.play-container-two').removeAttr("style");
-                }
-            }
-
         })
         .fail(function() {
             // alert("error"); // Again something here if we can't get the artists details. 
@@ -149,6 +98,6 @@ function activeDay() {
             $('html, body').animate({
                 scrollTop: $('.active-day').offset().top
             }, 'slow');
-        }, 500);
+        }, 2000);
     }
 }
