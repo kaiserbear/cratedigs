@@ -242,13 +242,14 @@
     margin-right: 5px;
 }
 
+.details {
+    position: relative;
+    color: #fff;
+    float: left;
+    top: 10px;
+}
+
 @media (min-width: 400px) {
-    .details {
-        position: relative;
-        color: #fff;
-        float: left;
-        top: 10px;
-    }
     .audio-player .controls {
         position: relative;
         float: left;

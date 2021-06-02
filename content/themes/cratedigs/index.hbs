@@ -29,6 +29,16 @@ into the {body} of the default.hbs template --}}
 
             <div class="post-feed">
 
+                {{#get "posts" filter="tag:latest" limit="2"}}
+                    {{#foreach posts}}
+                       {{> "post-card-home"}}
+                    {{/foreach}}
+                {{/get}}
+
+            </div>
+
+            <div class="post-feed">
+
                 {{!-- Who we are --}}
                 {{#get "pages" filter="id:60b77d0dd1191c001e4b393c"}}
                     {{#foreach pages}}
