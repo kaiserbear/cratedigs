@@ -3,10 +3,7 @@
 into the {body} of the default.hbs template --}}
 
 
-
-
 <div id="swup" class="transition-fade">
-
 
 
 <header class="site-home-header">
@@ -15,11 +12,7 @@ into the {body} of the default.hbs template --}}
             
             <div class="site-header-content">
                 <h1 class="site-title">
-                    {{#if @site.logo}}
-                        <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
-                    {{else}}
-                        {{@site.title}}
-                    {{/if}}
+                    {{@site.title}}
                 </h1>
                 <h2 class="site-description">{{@site.description}}</h2>
             </div>
@@ -31,12 +24,11 @@ into the {body} of the default.hbs template --}}
 
     {{!-- The main content area --}}
     <main id="site-main" class="site-main outer">
+
         <div class="inner posts">
 
             <div class="post-feed">
-                {{#foreach posts}}
 
-<<<<<<< HEAD
                 {{!-- Who we are --}}
                 {{#get "pages" filter="id:60b6cd2b408d87001e6d65cb"}}
                     {{#foreach pages}}
@@ -79,16 +71,10 @@ into the {body} of the default.hbs template --}}
                 {{/get}}
 
                 
-=======
-                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                    {{> "post-card"}}
->>>>>>> parent of 9cd7af4... Updating the new website now with the full knowledge that I'll have missed bits. Need to test more on mobile. For now I think it's okay.
 
-                {{/foreach}}
             </div>
 
         </div>
-<<<<<<< HEAD
 
         <div class=" contribute">
             <div class="container">
@@ -148,9 +134,42 @@ into the {body} of the default.hbs template --}}
 
             </div>
         </div>
-=======
->>>>>>> parent of 9cd7af4... Updating the new website now with the full knowledge that I'll have missed bits. Need to test more on mobile. For now I think it's okay.
     </main>
+
+    
+
+    <div class=" records">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <h2>Sell your records through Crate Digs</h2>
+                        <p>We can sell your records via our Discogs account or if you're in the UK we offer to quote a price on your collection.</p>
+                        <a class="btn" target="_blank" href="https://www.discogs.com/seller/crate_digs/profile">View Discogs</a>
+                        <a class="btn" target="_blank" href="mailto:hello@cratedigs.com">Email us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign-up">
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup">
+        <h2>Sign up to our newsletter</h2>
+        <p>Subscribe to our newsletter for all the latest in news, events and upcoming shows.</p>
+        <form action="https://cratedigs.us2.list-manage.com/subscribe/post?u=f46e9f530c4b11fe514e166c3&amp;id=fd599d2f0e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="yourname@website.com" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f46e9f530c4b11fe514e166c3_fd599d2f0e" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" class="btn" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+</div>
+
+<!--End mc_embed_signup-->
+    </div>
 
 </div>
 
