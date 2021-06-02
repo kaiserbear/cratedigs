@@ -1,26 +1,26 @@
 {
-  "url": "http://localhost:2368/",
-  "server": {
-    "port": 2368,
-    "host": "127.0.0.1"
-  },
-  "database": {
-    "client": "sqlite3",
-    "connection": {
-      "filename": "/Users/jayhughes/Development/cratedigs/content/data/ghost-local.db"
+    "url": "http://localhost:2368/",
+    "server": {
+        "port": 2368,
+        "host": "127.0.0.1"
+    },
+    "database": {
+        "client": "sqlite3",
+        "connection": {
+            "filename": "/Users/jayhughes/Development/cratedigs/content/data/ghost-local-new.db"
+        }
+    },
+    "mail": {
+        "transport": "Direct"
+    },
+    "logging": {
+        "transports": [
+            "file",
+            "stdout"
+        ]
+    },
+    "process": "local",
+    "paths": {
+        "contentPath": "content"
     }
-  },
-  "mail": {
-    "transport": "Direct"
-  },
-  "logging": {
-    "transports": [
-      "file",
-      "stdout"
-    ]
-  },
-  "process": "local",
-  "paths": {
-    "contentPath": "content"
-  }
 }

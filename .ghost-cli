@@ -3,6 +3,5 @@
   "cli-version": "1.16.3",
   "name": "ghost-local-2",
   "previous-version": "3.42.4",
-  "node-version": "12.10.0",
-  "running": "development"
+  "node-version": "12.10.0"
 }
