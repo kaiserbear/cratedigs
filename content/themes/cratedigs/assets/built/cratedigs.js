@@ -39,18 +39,22 @@ nav();
 // Toggle chat window
 var $chatWindow = $(".chat-window");
 var $toggleChat = $(".chat-window .toggle");
+
+$(document).ready(function() {
+    $toggleChat.click();
+});
 $toggleChat.click(function() {
     if ($(this).hasClass('open')) {
         $(this).removeClass('open');
         $(this).addClass('closed').css({ 'transform': 'rotate(-180deg)' });
         $chatWindow.css({
-            "bottom": "-121px"
+            "bottom": "-170px"
         });
     } else {
         $(this).removeClass('closed');
         $(this).addClass('open').css({ 'transform': 'rotate(0)' });
         $chatWindow.css({
-            "bottom": "191px"
+            "bottom": "135px"
         })
     }
 
