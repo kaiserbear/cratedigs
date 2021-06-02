@@ -101,11 +101,28 @@
          </div>
     </div>
 
+    {{!-- <div id="player2" class="audio-player-live audio-player">
+        <div class="container">
+            <div class="controls-two controls">
+                <div class="play-container-two play-container">
+                    <div id="play-two" class="toggle-play play"></div>
+                </div>
+            </div>
+            <div class="details">
+                <img src="/assets/img/image-player.png" class="imageTwo" />
+                <div class="artistNameTwo artistName"></div>
+                <div class="shownameTwo showname"></div>
+                <div class="live">
+                    <div class="showtimeTwo"></div>
+                </div>
+            </div>
+         </div>
+    </div> --}}
 
     <div class="chat-window">
         
         <span class="toggle open"><i class="fa fa-chevron-down"></i></span>
-        <h5><i class="fas fa-comments"></i> Radio shouts</h5>
+        <h5><i class="fas fa-comments"></i></h5>
         <iframe src="https://minnit.chat/Cratedigs?embed&mobiledark&nickname=" allowTransparency="true"></iframe>
     </div>
 
@@ -141,8 +158,9 @@
         swup.on('contentReplaced', function() {
             crateInit();
             window.scrollTo(0, 0);
+            
         });
-        setInterval(getDJinfo, 10000);
+        setInterval(getDJinfo, 2000);
         swup.cache.empty();
     </script>
     

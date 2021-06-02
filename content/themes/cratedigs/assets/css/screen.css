@@ -110,95 +110,6 @@ body {
     }
 }
 
-
-/* temp */
-
-.home-template {
-    padding: 0 0 13rem!important;
-}
-
-.contribute {
-    background: url(/content/images/2021/05/coffee.jpg);
-    background-size: 110%;
-    background-repeat: repeat;
-    padding: 3rem 0 5rem;
-    background-position: 60%;
-    margin-bottom: 6rem;
-    text-align: center;
-    color: white;
-}
-
-.records {
-    text-align: center;
-    background: url('/content/images/2021/05/records.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    padding: 6em;
-    background-position: center;
-    color: white;
-}
-
-.records h2,
-.contribute h3 {
-    font-size: 3.2rem;
-}
-
-.sign-up {
-    background: #ffdd00;
-    padding: 5rem;
-    text-align: center;
-}
-
-.sign-up #mc_embed_signup_scroll {
-    text-align: center;
-}
-
-.sign-up #mc_embed_signup input.email {
-    padding: 0 0.7em;
-    margin: 0 1% 10px 0;
-    min-height: 42px;
-    width: 42%;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: inherit;
-    display: inline-block;
-}
-
-.records .btn,
-.sign-up .btn {
-    background: rgb(20, 105, 202);
-    color: white;
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 15px;
-    margin: 0 1rem;
-}
-
-.contribute .bmc-btn {
-    font-size: 15px;
-    text-align: left;
-    border-radius: 5px;
-}
-
-.contribute h2 {
-    padding-bottom: 4rem;
-}
-
-.home-template .post.page .post-card-meta {
-    display: none;
-}
-
-.home-template .post-feed {
-    padding-bottom: 1rem;
-}
-
-.home-template .post-feed.clear {
-    padding-top: 0;
-    /* padding-bottom: 5vw; */
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -210,10 +121,6 @@ body {
 
 body.home-template {
     padding: 8rem 0;
-}
-
-body.post-template {
-    padding-bottom: 4rem;
 }
 
 .nav-menu {
@@ -489,7 +396,7 @@ body.post-template {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: #2d2d2d;
+    background: black;
 }
 
 .site-nav {
@@ -1577,9 +1484,6 @@ Usage (In Ghost editor):
 @media (min-width: 800px) {
     .site-home-header .site-header-background {
         display: inherit;
-        height: 0;
-        margin: 0;
-        padding: 64px 0 0;
     }
     body.home-template {
         padding: 0;
