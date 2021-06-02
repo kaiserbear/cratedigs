@@ -118,7 +118,7 @@ body {
 }
 
 .contribute {
-    background: url(/content/images/2021/05/coffee.jpg);
+    background: url('https://s3-eu-west-2.amazonaws.com/cratedigs/2021/06/coffee.jpg');
     background-size: 110%;
     background-repeat: repeat;
     padding: 3rem 0 5rem;
@@ -130,7 +130,7 @@ body {
 
 .records {
     text-align: center;
-    background: url('/content/images/2021/05/records.jpg');
+    background: url('https://s3-eu-west-2.amazonaws.com/cratedigs/2021/06/records.jpg');
     background-size: cover;
     background-repeat: repeat;
     padding: 6em;
