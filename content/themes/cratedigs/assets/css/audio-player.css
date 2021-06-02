@@ -32,7 +32,7 @@
 }
 
 .artistName {
-    text-align: left;
+    /* text-align: left; */
     font-size: 18px;
     font-weight: bold;
 }
@@ -172,7 +172,7 @@
 .audio-player .controls,
 .audio-player .details {
     display: inline-block;
-    float: left;
+    text-align: center;
 }
 
 .audio-player .controls .toggle-play.pause:hover {

@@ -1,0 +1,32 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #author tags pulls data from the author --}}
+
+<header class="site-header">
+    {{> site-header}}
+</header>
+
+ <div id="swup" class="transition-fade">
+
+    {{!-- The main content area --}}
+    <main id="site-main" class="site-main outer">
+        <div class="inner">
+
+            <div class="inner posts">
+
+            <div class="post-feed clear">
+
+             {{!-- Latest mix series edition --}}
+                {{#get "posts" filter="tag:events"}}
+                    {{#foreach posts}}
+                        {{> "post-card-home"}}
+                    {{/foreach}}
+                {{/get}}
+
+            </div>
+
+        </div>
+    </main>
+
+</div>
