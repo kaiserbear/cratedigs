@@ -1,31 +1,31 @@
 {
-  "name": "ghost-on-heroku",
-  "description": "Just a blogging platform on Heroku.",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/cobyism/ghost-on-heroku.git"
-  },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
-  "private": true,
-  "version": "1.25.5",
-  "dependencies": {
-    "casper": "github:tryghost/Casper#2.1.9",
-    "ghost": "^3.40.5",
-    "ghost-storage-adapter-s3": "^2.3.0",
-    "googleapis": "^67.0.0",
-    "gulp": "^4.0.2",
-    "mysql": "^2.14.1"
-  },
-  "engines": {
-    "node": "10.x"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "devDependencies": {
-    "canvas": "^2.6.1",
-    "express-brute": "^1.0.1",
-    "knex": "^0.21.5"
-  }
+    "name": "ghost-on-heroku",
+    "description": "Just a blogging platform on Heroku.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cobyism/ghost-on-heroku.git"
+    },
+    "bugs": "https://github.com/TryGhost/Ghost/issues",
+    "private": true,
+    "version": "1.25.5",
+    "dependencies": {
+        "casper": "github:tryghost/Casper#2.1.9",
+        "ghost": "^v4.32.0",
+        "ghost-storage-adapter-s3": "^2.3.0",
+        "googleapis": "^67.0.0",
+        "gulp": "^4.0.2",
+        "mysql": "^2.14.1"
+    },
+    "engines": {
+        "node": "10.x"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "devDependencies": {
+        "canvas": "^2.6.1",
+        "express-brute": "^1.0.1",
+        "knex": "^0.21.5"
+    }
 }
